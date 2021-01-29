@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PeruMoney.WS.Dominio.Contrato\PeruMoney.WS.Dominio.Contrato.csproj" />
+    <ProjectReference Include="..\PeruMoney.WS.Repositorio.Contrato\PeruMoney.WS.Repositorio.Contrato.csproj" />
+    <ProjectReference Include="..\PeruMoney.WS.Repositorio\PeruMoney.WS.Repositorio.csproj" />
+  </ItemGroup>
+
+</Project>

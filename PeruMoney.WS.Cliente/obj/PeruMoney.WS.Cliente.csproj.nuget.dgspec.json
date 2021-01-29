@@ -1,0 +1,461 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Cliente\\PeruMoney.WS.Cliente.csproj": {}
+  },
+  "projects": {
+    "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Bloque.SqlServer\\PeruMoney.WS.Bloque.SqlServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Bloque.SqlServer\\PeruMoney.WS.Bloque.SqlServer.csproj",
+        "projectName": "PeruMoney.WS.Bloque.SqlServer",
+        "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Bloque.SqlServer\\PeruMoney.WS.Bloque.SqlServer.csproj",
+        "packagesPath": "C:\\Users\\STACY\\.nuget\\packages\\",
+        "outputPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Bloque.SqlServer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\STACY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Cliente\\PeruMoney.WS.Cliente.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Cliente\\PeruMoney.WS.Cliente.csproj",
+        "projectName": "PeruMoney.WS.Cliente",
+        "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Cliente\\PeruMoney.WS.Cliente.csproj",
+        "packagesPath": "C:\\Users\\STACY\\.nuget\\packages\\",
+        "outputPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Cliente\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\STACY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Bloque.SqlServer\\PeruMoney.WS.Bloque.SqlServer.csproj": {
+                "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Bloque.SqlServer\\PeruMoney.WS.Bloque.SqlServer.csproj"
+              },
+              "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Dominio.Contrato\\PeruMoney.WS.Dominio.Contrato.csproj": {
+                "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Dominio.Contrato\\PeruMoney.WS.Dominio.Contrato.csproj"
+              },
+              "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Dominio\\PeruMoney.WS.Dominio.csproj": {
+                "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Dominio\\PeruMoney.WS.Dominio.csproj"
+              },
+              "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Modelo\\PeruMoney.WS.Modelo.csproj": {
+                "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Modelo\\PeruMoney.WS.Modelo.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.8.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.8.0, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Dominio.Contrato\\PeruMoney.WS.Dominio.Contrato.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Dominio.Contrato\\PeruMoney.WS.Dominio.Contrato.csproj",
+        "projectName": "PeruMoney.WS.Dominio.Contrato",
+        "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Dominio.Contrato\\PeruMoney.WS.Dominio.Contrato.csproj",
+        "packagesPath": "C:\\Users\\STACY\\.nuget\\packages\\",
+        "outputPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Dominio.Contrato\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\STACY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Modelo\\PeruMoney.WS.Modelo.csproj": {
+                "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Modelo\\PeruMoney.WS.Modelo.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Dominio\\PeruMoney.WS.Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Dominio\\PeruMoney.WS.Dominio.csproj",
+        "projectName": "PeruMoney.WS.Dominio",
+        "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Dominio\\PeruMoney.WS.Dominio.csproj",
+        "packagesPath": "C:\\Users\\STACY\\.nuget\\packages\\",
+        "outputPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Dominio\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\STACY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Dominio.Contrato\\PeruMoney.WS.Dominio.Contrato.csproj": {
+                "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Dominio.Contrato\\PeruMoney.WS.Dominio.Contrato.csproj"
+              },
+              "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio.Contrato\\PeruMoney.WS.Repositorio.Contrato.csproj": {
+                "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio.Contrato\\PeruMoney.WS.Repositorio.Contrato.csproj"
+              },
+              "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio\\PeruMoney.WS.Repositorio.csproj": {
+                "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio\\PeruMoney.WS.Repositorio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Modelo\\PeruMoney.WS.Modelo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Modelo\\PeruMoney.WS.Modelo.csproj",
+        "projectName": "PeruMoney.WS.Modelo",
+        "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Modelo\\PeruMoney.WS.Modelo.csproj",
+        "packagesPath": "C:\\Users\\STACY\\.nuget\\packages\\",
+        "outputPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Modelo\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\STACY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio.Contrato\\PeruMoney.WS.Repositorio.Contrato.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio.Contrato\\PeruMoney.WS.Repositorio.Contrato.csproj",
+        "projectName": "PeruMoney.WS.Repositorio.Contrato",
+        "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio.Contrato\\PeruMoney.WS.Repositorio.Contrato.csproj",
+        "packagesPath": "C:\\Users\\STACY\\.nuget\\packages\\",
+        "outputPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio.Contrato\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\STACY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Modelo\\PeruMoney.WS.Modelo.csproj": {
+                "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Modelo\\PeruMoney.WS.Modelo.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio\\PeruMoney.WS.Repositorio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio\\PeruMoney.WS.Repositorio.csproj",
+        "projectName": "PeruMoney.WS.Repositorio",
+        "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio\\PeruMoney.WS.Repositorio.csproj",
+        "packagesPath": "C:\\Users\\STACY\\.nuget\\packages\\",
+        "outputPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\STACY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Bloque.SqlServer\\PeruMoney.WS.Bloque.SqlServer.csproj": {
+                "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Bloque.SqlServer\\PeruMoney.WS.Bloque.SqlServer.csproj"
+              },
+              "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio.Contrato\\PeruMoney.WS.Repositorio.Contrato.csproj": {
+                "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio.Contrato\\PeruMoney.WS.Repositorio.Contrato.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
