@@ -7,12 +7,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace PeruMoney.WS.Cliente.Controllers.API
 {
     [Route(Ruta.UriSede.Prefijo)]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class SedeController : Controller
     {
         private readonly ILogger<SedeController> _logger;
