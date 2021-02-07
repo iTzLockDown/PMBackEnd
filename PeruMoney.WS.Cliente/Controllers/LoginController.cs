@@ -37,7 +37,7 @@ namespace PeruMoney.WS.Cliente.Controllers
 
         [HttpPost]
         [Route(Ruta.UriLogin.Autentificacion)]
-        public IActionResult GetAutentificacion([FromBody]LoginServer oLoginServer)
+        public IActionResult GetAutentificacion(LoginServer oLoginServer)
         {
             IActionResult response = Unauthorized();
             if (oLoginServer.Usuario == null || oLoginServer.Contrasenia == null)

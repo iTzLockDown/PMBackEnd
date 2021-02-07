@@ -26,10 +26,10 @@ D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Dominio.Contrato\bin\Debug\netcoreapp3
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Dominio.Contrato\bin\Debug\netcoreapp3.1\PeruMoney.WS.Dominio.Contrato.pdb
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Dominio.Contrato\bin\Debug\netcoreapp3.1\PeruMoney.WS.Modelo.dll
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Dominio.Contrato\bin\Debug\netcoreapp3.1\PeruMoney.WS.Modelo.pdb
-D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Dominio.Contrato\obj\Debug\netcoreapp3.1\PeruMoney.WS.Dominio.Contrato.csprojAssemblyReference.cache
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Dominio.Contrato\obj\Debug\netcoreapp3.1\PeruMoney.WS.Dominio.Contrato.AssemblyInfoInputs.cache
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Dominio.Contrato\obj\Debug\netcoreapp3.1\PeruMoney.WS.Dominio.Contrato.AssemblyInfo.cs
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Dominio.Contrato\obj\Debug\netcoreapp3.1\PeruMoney.WS.Dominio.Contrato.csproj.CoreCompileInputs.cache
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Dominio.Contrato\obj\Debug\netcoreapp3.1\PeruMoney.WS.Dominio.Contrato.csproj.CopyComplete
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Dominio.Contrato\obj\Debug\netcoreapp3.1\PeruMoney.WS.Dominio.Contrato.dll
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Dominio.Contrato\obj\Debug\netcoreapp3.1\PeruMoney.WS.Dominio.Contrato.pdb
+D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Dominio.Contrato\obj\Debug\netcoreapp3.1\PeruMoney.WS.Dominio.Contrato.csprojAssemblyReference.cache

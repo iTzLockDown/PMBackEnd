@@ -182,6 +182,7 @@ D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Pruebas\bin\Debug\netcoreapp3.1\zh-Han
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Pruebas\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Pruebas\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Pruebas\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Pruebas\obj\Debug\netcoreapp3.1\PeruMoney.WS.Pruebas.csprojAssemblyReference.cache
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Pruebas\obj\Debug\netcoreapp3.1\PeruMoney.WS.Pruebas.AssemblyInfoInputs.cache
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Pruebas\obj\Debug\netcoreapp3.1\PeruMoney.WS.Pruebas.AssemblyInfo.cs
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Pruebas\obj\Debug\netcoreapp3.1\PeruMoney.WS.Pruebas.csproj.CoreCompileInputs.cache

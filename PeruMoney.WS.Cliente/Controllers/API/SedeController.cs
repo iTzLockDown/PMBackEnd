@@ -66,12 +66,12 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 
         [HttpPut]
         [Route(Ruta.UriSede.Eliminar)]
-        public IActionResult Eliminar(int codigoSede, int codigoUsuario)
+        public IActionResult Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest)
         {
             bool respuesta = false;
             using (ISedeDominio oDominio = new SedeDominio())
             {
-                respuesta = oDominio.Eliminar(codigoSede, codigoUsuario);
+                respuesta = oDominio.Eliminar(oPEMEliminaObjetoRequest);
             }
             if (!respuesta) return NotFound();
 

@@ -11,6 +11,6 @@ namespace PeruMoney.WS.Repositorio.Contrato
         IEnumerable<PEMSedeResponse> TraerTodos();
         bool Grabar(PEMSedeRequest oPEMSedeRequest);
         bool Editar(PEMSedeRequest oPEMSedeRequest);
-        bool Eliminar(int codigoPersona, int codigoUsuario);
+        bool Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest);
     }
 }

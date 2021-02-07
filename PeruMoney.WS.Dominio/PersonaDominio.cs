@@ -46,12 +46,12 @@ namespace PeruMoney.WS.Repositorio.Contrato
             }
             return respuesta;
         }
-        public bool Eliminar(int codigoPersona, int codigoUsuario)
+        public bool Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest)
         {
             bool respuesta = false;
             using (IPersonaRepositorio oRepositorio = new PersonaRepositorio())
             {
-                respuesta = oRepositorio.Eliminar(codigoPersona, codigoUsuario);
+                respuesta = oRepositorio.Eliminar(oPEMEliminaObjetoRequest);
             }
             return respuesta;
         }

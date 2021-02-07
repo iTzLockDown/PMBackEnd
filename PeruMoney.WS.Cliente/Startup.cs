@@ -32,11 +32,7 @@ namespace PeruMoney.WS.Cliente
         {
 
             services.AddControllers();
-            services.AddCors(options =>
-            {
-                options.AddPolicy("CorsPolicy", builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().AllowCredentials().Build());
-
-            });
+            services.AddCors();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
@@ -64,6 +60,12 @@ namespace PeruMoney.WS.Cliente
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(x => x
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .SetIsOriginAllowed(origin => true) // allow any origin
+                .AllowCredentials());
             app.UseAuthentication();
             app.UseHttpsRedirection();
             app.UseSwagger();

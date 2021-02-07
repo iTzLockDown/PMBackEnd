@@ -13,7 +13,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
         PEMPersonaResponse TraerUno(string documento);
         bool Grabar(PEMPersonaRequest oPEMSedeRequest);
         bool Editar(PEMPersonaRequest oPEMSedeRequest);
-        bool Eliminar(int codigoPersona, int codigoUsuario);
+        bool Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest);
 
         bool Entrada(PEMAsistenciaRequest oPEMAsistenciaRequest);
         bool Salida(PEMAsistenciaRequest oPEMAsistenciaRequest);
