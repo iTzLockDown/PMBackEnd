@@ -28,6 +28,17 @@ namespace PeruMoney.WS.Repositorio.Contrato
             }
             return oObjeto;
         }
+
+        public IEnumerable<PEMAsistenciaPersonaResponse> TraerTodosDocumento(string documento)
+        {
+            IEnumerable<PEMAsistenciaPersonaResponse> oLista = null;
+            using (IPersonaRepositorio oRepositorio = new PersonaRepositorio())
+            {
+                oLista = oRepositorio.TraerTodosDocumento(documento);
+            }
+
+            return oLista;
+        }
         public bool Grabar(PEMPersonaRequest oPEMSedeRequest)
         {
             bool respuesta = false;

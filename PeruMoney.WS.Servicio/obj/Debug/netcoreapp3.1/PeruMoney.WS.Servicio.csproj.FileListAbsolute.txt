@@ -10,7 +10,6 @@ D:\Proyectos\PeruMoney1\BackEnd\PeruMoneyWs\PeruMoney.WS.Servicio\obj\Debug\netc
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Servicio\bin\Debug\netcoreapp3.1\PeruMoney.WS.Servicio.deps.json
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Servicio\bin\Debug\netcoreapp3.1\PeruMoney.WS.Servicio.dll
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Servicio\bin\Debug\netcoreapp3.1\PeruMoney.WS.Servicio.pdb
-D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Servicio\obj\Debug\netcoreapp3.1\PeruMoney.WS.Servicio.csprojAssemblyReference.cache
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Servicio\obj\Debug\netcoreapp3.1\PeruMoney.WS.Servicio.AssemblyInfoInputs.cache
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Servicio\obj\Debug\netcoreapp3.1\PeruMoney.WS.Servicio.AssemblyInfo.cs
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Servicio\obj\Debug\netcoreapp3.1\PeruMoney.WS.Servicio.csproj.CoreCompileInputs.cache

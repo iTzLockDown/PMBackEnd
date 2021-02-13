@@ -48,6 +48,23 @@ namespace PeruMoney.WS.Repositorio.Contrato
             return oObjeto;
         }
 
+        public IEnumerable<PEMAsistenciaPersonaResponse> TraerTodosDocumento(string documento)
+        {
+            IEnumerable<PEMAsistenciaPersonaResponse> oLista = null;
+            string sp = StoredProcedure.USP_PERSONAL_TRAERDOCUMENTO;
+            List<SqlParameterItem> parametros = new List<SqlParameterItem>();
+            parametros.Add(new SqlParameterItem("@x_cDocIdePer", SqlDbType.VarChar, documento));
+            using (SqlHelperWS db = new SqlHelperWS(dbContext.PLAPERUMONEY()))
+            {
+                using (SqlDataReader reader = db.ExecuteReader(sp, parametros))
+                {
+                    oLista = reader.Select(DesdeDataReaderListaAsistencia).ToList();
+                }
+            }
+
+            return oLista;
+        }
+
         public bool Editar(PEMPersonaRequest oPEMSedeRequest)
         {
             bool respuesta = false;
@@ -148,6 +165,22 @@ namespace PeruMoney.WS.Repositorio.Contrato
                 Email = reader.GetValue(7).ToString().Trim(),
                 Estado = reader.GetValue(8).ToString().Trim(),
 
+            };
+        }
+
+        public PEMAsistenciaPersonaResponse DesdeDataReaderListaAsistencia(IDataReader reader)
+        {
+            return new PEMAsistenciaPersonaResponse()
+            {
+
+                Codigo = reader.GetValue(0).ToString().Trim(),
+                Informacion = reader.GetValue(1).ToString().Trim(),
+                NombreSede = reader.GetValue(2).ToString().Trim(),
+                HoraIngreso= reader.GetValue(3).ToString().Trim(),
+                FechaIngreso= reader.GetValue(4).ToString().Trim(),
+                HoraSalida= reader.GetValue(5).ToString().Trim(),
+                FechaSalida= reader.GetValue(6).ToString().Trim(),
+               
             };
         }
     #endregion

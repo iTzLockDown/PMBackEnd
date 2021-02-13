@@ -14,6 +14,7 @@ namespace PeruMoney.WS.Repositorio.Contrato.SqlServer
 
         #region Personal
         public const string USP_PERSONAL_TRAERTODOS = "PLA_LisPerson_sp";
+        public const string USP_PERSONAL_TRAERDOCUMENTO = "PLA_LisAsiPer_sp";
         public const string USP_PERSONAL_GRABAR = "PLA_InsPerson_sp";
         public const string USP_PERSONAL_EDITAR = "PLA_UpdPerson_sp";
         public const string USP_PERSONAL_ELIMINAR = "PLA_DelPerson_sp";

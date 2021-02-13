@@ -32,4 +32,3 @@ D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Dominio.Contrato\obj\Debug\netcoreapp3
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Dominio.Contrato\obj\Debug\netcoreapp3.1\PeruMoney.WS.Dominio.Contrato.csproj.CopyComplete
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Dominio.Contrato\obj\Debug\netcoreapp3.1\PeruMoney.WS.Dominio.Contrato.dll
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Dominio.Contrato\obj\Debug\netcoreapp3.1\PeruMoney.WS.Dominio.Contrato.pdb
-D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Dominio.Contrato\obj\Debug\netcoreapp3.1\PeruMoney.WS.Dominio.Contrato.csprojAssemblyReference.cache

@@ -18,12 +18,18 @@ namespace PeruMoney.WS.Cliente.Controllers
         {
             public const string Prefijo = "api/personal";
             public const string ListaTodos = "lista";
-            public const string ListaUno = "listauno";
+            public const string ListaAsistencia = "asistencia";
             public const string Grabar = "grabar";
             public const string Editar = "editar";
             public const string Eliminar = "eliminar";
+           
+        }
+        public class UriAsistencia
+        {
+            public const string Prefijo = "api/asistencia";
             public const string Entrada = "entrada";
             public const string Salida = "salida";
+            public const string TraerPersonal = "traerpersonal";
         }
 
         public class UriSede

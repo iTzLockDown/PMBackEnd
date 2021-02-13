@@ -15,4 +15,3 @@ D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Modelo\obj\Debug\netcoreapp3.1\PeruMon
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Modelo\obj\Debug\netcoreapp3.1\PeruMoney.WS.Modelo.csproj.CoreCompileInputs.cache
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Modelo\obj\Debug\netcoreapp3.1\PeruMoney.WS.Modelo.dll
 D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Modelo\obj\Debug\netcoreapp3.1\PeruMoney.WS.Modelo.pdb
-D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Modelo\obj\Debug\netcoreapp3.1\PeruMoney.WS.Modelo.csprojAssemblyReference.cache

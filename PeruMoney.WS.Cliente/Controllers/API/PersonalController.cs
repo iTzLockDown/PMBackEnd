@@ -36,25 +36,23 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 
             return Ok(oLista);
         }
-
         [HttpGet]
-        [Route(Ruta.UriPersona.ListaUno)]
-        public IActionResult TraerUno(string documento)
+        [Route(Ruta.UriPersona.ListaAsistencia)]
+        public IActionResult TraerTodosDocumento(string documento)
         {
-            PEMPersonaResponse oObjeto = null;
+            IEnumerable<PEMAsistenciaPersonaResponse> oLista = null;
             using (IPersonaDominio oDominio = new PersonaDominio())
             {
-                oObjeto = oDominio.TraerUno(documento);
+                oLista = oDominio.TraerTodosDocumento(documento);
             }
-            if (oObjeto == null) return NotFound();
+            if (oLista == null) return NotFound();
 
-            return Ok(oObjeto);
+            return Ok(oLista);
         }
-
 
         [HttpPost]
         [Route(Ruta.UriPersona.Grabar)]
-        public IActionResult TraerUno(PEMPersonaRequest oPEMPersonaRequest)
+        public IActionResult Grabar(PEMPersonaRequest oPEMPersonaRequest)
         {
             bool respuesta = false;
             using (IPersonaDominio oDominio = new PersonaDominio())
@@ -93,34 +91,7 @@ namespace PeruMoney.WS.Cliente.Controllers.API
             return Ok(respuesta);
         }
 
-        [HttpPost]
-        [Route(Ruta.UriPersona.Entrada)]
-        public IActionResult Entrada(PEMAsistenciaRequest oPEMAsistenciaRequest)
-        {
-            bool respuesta = false;
-            using (IPersonaDominio oDominio = new PersonaDominio())
-            {
-                respuesta = oDominio.Entrada(oPEMAsistenciaRequest);
-            }
-            if (!respuesta) return NotFound();
-
-            return Ok(respuesta);
-        }
-
-        [HttpPut]
-        [Route(Ruta.UriPersona.Salida)]
-        public IActionResult Salida(PEMAsistenciaRequest oPEMAsistenciaRequest)
-        {
-            //backdor
-            bool respuesta = false;
-            using (IPersonaDominio oDominio = new PersonaDominio())
-            {
-                respuesta = oDominio.Salida(oPEMAsistenciaRequest);
-            }
-            if (!respuesta) return NotFound();
-
-            return Ok(respuesta);
-        }
+      
     }
 }
 

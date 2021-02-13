@@ -10,6 +10,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
     public interface IPersonaRepositorio:IDisposable
     {
         IEnumerable<PEMPersonaResponse> TraerTodos();
+        IEnumerable<PEMAsistenciaPersonaResponse> TraerTodosDocumento(string documento);
         PEMPersonaResponse TraerUno(string documento);
         bool Grabar(PEMPersonaRequest oPEMSedeRequest);
         bool Editar(PEMPersonaRequest oPEMSedeRequest);
