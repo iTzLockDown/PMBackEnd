@@ -40,6 +40,8 @@ namespace PeruMoney.WS.Repositorio.Contrato.SqlServer
         public const string USP_SEDE_ELIMINAR = "PLA_DelSedes_sp";
         #endregion
 
+
+
         #region Horario
 
         public const string USP_HORARIO_TRAERTODOS = "PLA_LisHorari_sp";
@@ -83,7 +85,7 @@ namespace PeruMoney.WS.Repositorio.Contrato.SqlServer
 
         #endregion
 
-        #region Eduacion del Persona
+        #region Educacion del Persona
         public const string USP_EDUCACION_TRAERTODOS = "PLA_LisEduPer_sp";
         public const string USP_EDUCACION_GRABAR = "PLA_InsEduPer_sp";
         public const string USP_EDUCACION_EDITAR = "PLA_UpdEduPer_sp";
@@ -109,11 +111,9 @@ namespace PeruMoney.WS.Repositorio.Contrato.SqlServer
 
         #endregion
 
-
-
         #region Planilla
         public const string USP_PLANILLA_TRAERTODOS = "PLA_LisPlaPer_sp";
-        public const string USP_PLANILLA_EDITAR = "PLA_InsPlaPer_sp";
+        public const string USP_PLANILLA_GRABAR = "PLA_InsPlaPer_sp";
 
 
 
@@ -135,9 +135,17 @@ namespace PeruMoney.WS.Repositorio.Contrato.SqlServer
         public const string USP_AFP_GRABAR = "PLA_InsAfpEmp_sp";
         public const string USP_AFP_EDITAR = "PLA_UpdAfpEmp_sp";
         public const string USP_AFP_ELIMINAR = "PLA_DelAfpEmp_sp";
-        
+
         #endregion
- 
+
+        #region Social 
+
+        public const string USP_SOCIAL_TRAERTODOS = "PLA_LisSocPer_sp";
+        public const string USP_SOCIAL_GRABAR = "PLA_InsSocPer_sp";
+        public const string USP_SOCIAL_EDITAR = "PLA_UpdSocPer_sp";
+
+        #endregion
+
 
 
     }

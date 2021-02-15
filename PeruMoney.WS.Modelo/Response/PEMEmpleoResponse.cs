@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PeruMoney.WS.Modelo.Response
 {
-    public class PEMEmpleo
+    public class PEMEmpleoResponse
     {
 
         public string Codigo { get; set; }      //nCodEmpPer  
