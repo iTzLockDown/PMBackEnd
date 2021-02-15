@@ -16,7 +16,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
         {
             return false;
         }
-        public bool Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest)
+        public bool Editar(PEMEmpleoPersonaRequest oPEMEmpleoPersonaRequest)
         {
             return false;
         }
@@ -24,5 +24,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
         {
             GC.SuppressFinalize(this);
         }
+
+
     }
 }

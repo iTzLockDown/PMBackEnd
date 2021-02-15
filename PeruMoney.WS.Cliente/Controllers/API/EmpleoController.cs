@@ -27,8 +27,8 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         [AllowAnonymous]
         public IActionResult TraerTodos()
         {
-            IEnumerable<PEMSedeResponse> oLista = null;
-            using (ISedeDominio oDominio = new SedeDominio())
+            IEnumerable<PEMEmpleoResponse> oLista = null;
+            using (IEmpleoDominio oDominio = new EmpleoDominio())
             {
                 oLista = oDominio.TraerTodos();
             }
@@ -40,12 +40,12 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 
         [HttpPost]
         [Route(Ruta.UriEmpleo.Grabar)]
-        public IActionResult TraerUno(PEMSedeRequest oPEMSedeRequest)
+        public IActionResult Grabar(PEMEmpleoRequest oPEMEmpleoRequest)
         {
             bool respuesta = false;
-            using (ISedeDominio oDominio = new SedeDominio())
+            using (IEmpleoDominio oDominio = new EmpleoDominio())
             {
-                respuesta = oDominio.Grabar(oPEMSedeRequest);
+                respuesta = oDominio.Grabar(oPEMEmpleoRequest);
             }
             if (!respuesta) return NotFound();
 
@@ -53,12 +53,12 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         }
         [HttpPut]
         [Route(Ruta.UriEmpleo.Editar)]
-        public IActionResult Editar(PEMSedeRequest oPEMSedeRequest)
+        public IActionResult Editar(PEMEmpleoRequest oPEMEmpleoRequest)
         {
             bool respuesta = false;
-            using (ISedeDominio oDominio = new SedeDominio())
+            using (IEmpleoDominio oDominio = new EmpleoDominio())
             {
-                respuesta = oDominio.Editar(oPEMSedeRequest);
+                respuesta = oDominio.Editar(oPEMEmpleoRequest);
             }
             if (!respuesta) return NotFound();
 
@@ -70,7 +70,7 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         public IActionResult Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest)
         {
             bool respuesta = false;
-            using (ISedeDominio oDominio = new SedeDominio())
+            using (IEmpleoDominio oDominio = new EmpleoDominio())
             {
                 respuesta = oDominio.Eliminar(oPEMEliminaObjetoRequest);
             }

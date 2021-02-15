@@ -8,16 +8,16 @@ namespace PeruMoney.WS.Repositorio.Contrato
 {
     public class AFPRepositorio : IAFPRepositorio
     {
-        public IEnumerable<PEMEmpleoResponse> TraerTodos()
+        public IEnumerable<PEMAFPResponse> TraerTodos()
         {
             return null;
         }
 
-        public bool Grabar(PEMEmpleoRequest oPEMEmpleoRequest)
+        public bool Grabar(PEMAFPRequest oPEMAFPRequest)
         {
             return false;
         }
-        public bool Editar(PEMEmpleoRequest oPEMEmpleoRequest)
+        public bool Editar(PEMAFPRequest oPEMAFPRequest)
         {
             return false;
         }

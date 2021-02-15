@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using PeruMoney.WS.Repositorio.SqlServer;
 
 namespace PeruMoney.WS.Cliente.Controllers.API
 {
@@ -27,8 +28,8 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         [AllowAnonymous]
         public IActionResult TraerTodos()
         {
-            IEnumerable<PEMSedeResponse> oLista = null;
-            using (ISedeDominio oDominio = new SedeDominio())
+            IEnumerable<PEMHorarioAgenciaResponse> oLista = null;
+            using (IHorarioAgenciaDominio oDominio = new HorarioAgenciaDominio())
             {
                 oLista = oDominio.TraerTodos();
             }
@@ -40,12 +41,12 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 
         [HttpPost]
         [Route(Ruta.UriHorarioAgencia.Grabar)]
-        public IActionResult TraerUno(PEMSedeRequest oPEMSedeRequest)
+        public IActionResult Grabar(PEMHorarioAgenciaRequest oPEMHorarioAgenciaRequest)
         {
             bool respuesta = false;
-            using (ISedeDominio oDominio = new SedeDominio())
+            using (IHorarioAgenciaDominio oDominio = new HorarioAgenciaDominio())
             {
-                respuesta = oDominio.Grabar(oPEMSedeRequest);
+                respuesta = oDominio.Grabar(oPEMHorarioAgenciaRequest);
             }
             if (!respuesta) return NotFound();
 
@@ -57,7 +58,7 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         public IActionResult Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest)
         {
             bool respuesta = false;
-            using (ISedeDominio oDominio = new SedeDominio())
+            using (IHorarioAgenciaDominio oDominio = new HorarioAgenciaDominio())
             {
                 respuesta = oDominio.Eliminar(oPEMEliminaObjetoRequest);
             }

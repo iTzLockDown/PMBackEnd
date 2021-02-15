@@ -28,12 +28,12 @@ namespace PeruMoney.WS.Repositorio.Contrato
 
             return respuesta;
         }
-        public bool Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest)
+        public bool Editar(PEMEmpleoPersonaRequest oPEMEmpleoPersonaRequest)
         {
             bool respuesta = false;
             using (IDetalleEmpleoPersonaRepositorio oRepositorio = new DetalleEmpleoPersonaRepositorio())
             {
-                respuesta = oRepositorio.Eliminar(oPEMEliminaObjetoRequest);
+                respuesta = oRepositorio.Editar(oPEMEmpleoPersonaRequest);
             }
 
             return respuesta;
@@ -42,5 +42,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
         {
             GC.SuppressFinalize(this);
         }
+
+ 
     }
 }

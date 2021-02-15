@@ -8,9 +8,9 @@ namespace PeruMoney.WS.Repositorio.Contrato
 {
     public class AFPDominio : IAFPDominio
     {
-        public IEnumerable<PEMEmpleoResponse> TraerTodos()
+        public IEnumerable<PEMAFPResponse> TraerTodos()
         {
-            IEnumerable<PEMEmpleoResponse> oLista = null;
+            IEnumerable<PEMAFPResponse> oLista = null;
             using (IAFPRepositorio oRepositorio = new AFPRepositorio())
             {
                 oLista = oRepositorio.TraerTodos();
@@ -19,22 +19,22 @@ namespace PeruMoney.WS.Repositorio.Contrato
             return oLista;
         }
 
-        public bool Grabar(PEMEmpleoRequest oPEMEmpleoRequest)
+        public bool Grabar(PEMAFPRequest oPEMAFPRequest)
         {
             bool respuesta = false;
             using (IAFPRepositorio oRepositorio = new AFPRepositorio())
             {
-                respuesta = oRepositorio.Grabar(oPEMEmpleoRequest);
+                respuesta = oRepositorio.Grabar(oPEMAFPRequest);
             }
 
             return respuesta;
         }
-        public bool Editar(PEMEmpleoRequest oPEMEmpleoRequest)
+        public bool Editar(PEMAFPRequest oPEMAFPRequest)
         {
             bool respuesta = false;
             using (IAFPRepositorio oRepositorio = new AFPRepositorio())
             {
-                respuesta = oRepositorio.Editar(oPEMEmpleoRequest);
+                respuesta = oRepositorio.Editar(oPEMAFPRequest);
             }
 
             return respuesta;

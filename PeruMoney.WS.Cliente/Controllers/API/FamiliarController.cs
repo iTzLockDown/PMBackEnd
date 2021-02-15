@@ -27,8 +27,8 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         [AllowAnonymous]
         public IActionResult TraerTodos()
         {
-            IEnumerable<PEMSedeResponse> oLista = null;
-            using (ISedeDominio oDominio = new SedeDominio())
+            IEnumerable<PEMFamiliaPersonaResponse> oLista = null;
+            using (IFamiliaPersonaIDominio oDominio = new FamiliaPersonaIDominio())
             {
                 oLista = oDominio.TraerTodos();
             }
@@ -40,12 +40,12 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 
         [HttpPost]
         [Route(Ruta.UriFamiliaPersona.Grabar)]
-        public IActionResult TraerUno(PEMSedeRequest oPEMSedeRequest)
+        public IActionResult Grabar(PEMFamiliaPersonalRequest oPEMFamiliaPersonalRequest)
         {
             bool respuesta = false;
-            using (ISedeDominio oDominio = new SedeDominio())
+            using (IFamiliaPersonaIDominio oDominio = new FamiliaPersonaIDominio())
             {
-                respuesta = oDominio.Grabar(oPEMSedeRequest);
+                respuesta = oDominio.Grabar(oPEMFamiliaPersonalRequest);
             }
             if (!respuesta) return NotFound();
 
@@ -53,12 +53,12 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         }
         [HttpPut]
         [Route(Ruta.UriFamiliaPersona.Editar)]
-        public IActionResult Editar(PEMSedeRequest oPEMSedeRequest)
+        public IActionResult Editar(PEMFamiliaPersonalRequest oPEMFamiliaPersonalRequest)
         {
             bool respuesta = false;
-            using (ISedeDominio oDominio = new SedeDominio())
+            using (IFamiliaPersonaIDominio oDominio = new FamiliaPersonaIDominio())
             {
-                respuesta = oDominio.Editar(oPEMSedeRequest);
+                respuesta = oDominio.Editar(oPEMFamiliaPersonalRequest);
             }
             if (!respuesta) return NotFound();
 
@@ -70,7 +70,7 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         public IActionResult Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest)
         {
             bool respuesta = false;
-            using (ISedeDominio oDominio = new SedeDominio())
+            using (IFamiliaPersonaIDominio oDominio = new FamiliaPersonaIDominio())
             {
                 respuesta = oDominio.Eliminar(oPEMEliminaObjetoRequest);
             }

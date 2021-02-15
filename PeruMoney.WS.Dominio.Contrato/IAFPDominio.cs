@@ -6,11 +6,11 @@ using PeruMoney.WS.Modelo.Response;
 
 namespace PeruMoney.WS.Repositorio.Contrato
 {
-    public interface IAFPDominio:IDisposable
+    public interface IAFPDominio : IDisposable
     {
-        IEnumerable<PEMEmpleoResponse> TraerTodos();
-        bool Grabar(PEMEmpleoRequest oPEMEmpleoRequest);
-        bool Editar(PEMEmpleoRequest oPEMEmpleoRequest);
+        IEnumerable<PEMAFPResponse> TraerTodos();
+        bool Grabar(PEMAFPRequest oPEMAFPRequest);
+        bool Editar(PEMAFPRequest oPEMAFPRequest);
         bool Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest);
     }
 }

@@ -27,8 +27,8 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         [AllowAnonymous]
         public IActionResult TraerTodos()
         {
-            IEnumerable<PEMSedeResponse> oLista = null;
-            using (ISedeDominio oDominio = new SedeDominio())
+            IEnumerable<PEMSocialPersonaResponse> oLista = null;
+            using (ISocialPersonaDominio oDominio = new SocialPersonaDominio())
             {
                 oLista = oDominio.TraerTodos();
             }
@@ -40,12 +40,12 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 
         [HttpPost]
         [Route(Ruta.UriSocial.Grabar)]
-        public IActionResult TraerUno(PEMSedeRequest oPEMSedeRequest)
+        public IActionResult TraerUno(PEMSocialPersonaRequest oPEMSocialPersonaRequest)
         {
             bool respuesta = false;
-            using (ISedeDominio oDominio = new SedeDominio())
+            using (ISocialPersonaDominio oDominio = new SocialPersonaDominio())
             {
-                respuesta = oDominio.Grabar(oPEMSedeRequest);
+                respuesta = oDominio.Grabar(oPEMSocialPersonaRequest);
             }
             if (!respuesta) return NotFound();
 
@@ -53,12 +53,12 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         }
         [HttpPut]
         [Route(Ruta.UriSocial.Editar)]
-        public IActionResult Editar(PEMSedeRequest oPEMSedeRequest)
+        public IActionResult Editar(PEMSocialPersonaRequest oPEMSocialPersonaRequest)
         {
             bool respuesta = false;
-            using (ISedeDominio oDominio = new SedeDominio())
+            using (ISocialPersonaDominio oDominio = new SocialPersonaDominio())
             {
-                respuesta = oDominio.Editar(oPEMSedeRequest);
+                respuesta = oDominio.Editar(oPEMSocialPersonaRequest);
             }
             if (!respuesta) return NotFound();
 

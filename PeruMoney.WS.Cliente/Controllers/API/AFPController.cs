@@ -27,8 +27,8 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         [AllowAnonymous]
         public IActionResult TraerTodos()
         {
-            IEnumerable<PEMSedeResponse> oLista = null;
-            using (ISedeDominio oDominio = new SedeDominio())
+            IEnumerable<PEMAFPResponse> oLista = null;
+            using (IAFPDominio oDominio = new AFPDominio())
             {
                 oLista = oDominio.TraerTodos();
             }
@@ -40,12 +40,12 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 
         [HttpPost]
         [Route(Ruta.UriAFP.Grabar)]
-        public IActionResult TraerUno(PEMSedeRequest oPEMSedeRequest)
+        public IActionResult Grabar(PEMAFPRequest oPEMAFPRequest)
         {
             bool respuesta = false;
-            using (ISedeDominio oDominio = new SedeDominio())
+            using (IAFPDominio oDominio = new AFPDominio())
             {
-                respuesta = oDominio.Grabar(oPEMSedeRequest);
+                respuesta = oDominio.Grabar(oPEMAFPRequest);
             }
             if (!respuesta) return NotFound();
 
@@ -53,12 +53,12 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         }
         [HttpPut]
         [Route(Ruta.UriAFP.Editar)]
-        public IActionResult Editar(PEMSedeRequest oPEMSedeRequest)
+        public IActionResult Editar(PEMAFPRequest oPEMAFPRequest)
         {
             bool respuesta = false;
-            using (ISedeDominio oDominio = new SedeDominio())
+            using (IAFPDominio oDominio = new AFPDominio())
             {
-                respuesta = oDominio.Editar(oPEMSedeRequest);
+                respuesta = oDominio.Editar(oPEMAFPRequest);
             }
             if (!respuesta) return NotFound();
 
@@ -70,7 +70,7 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         public IActionResult Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest)
         {
             bool respuesta = false;
-            using (ISedeDominio oDominio = new SedeDominio())
+            using (IAFPDominio oDominio = new AFPDominio())
             {
                 respuesta = oDominio.Eliminar(oPEMEliminaObjetoRequest);
             }

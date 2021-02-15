@@ -27,8 +27,8 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         [AllowAnonymous]
         public IActionResult TraerTodos()
         {
-            IEnumerable<PEMSedeResponse> oLista = null;
-            using (ISedeDominio oDominio = new SedeDominio())
+            IEnumerable<PEMHorarioReponse> oLista = null;
+            using (IHorarioDominio oDominio = new HorarioDominio())
             {
                 oLista = oDominio.TraerTodos();
             }
@@ -40,12 +40,12 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 
         [HttpPost]
         [Route(Ruta.UriHorario.Grabar)]
-        public IActionResult TraerUno(PEMSedeRequest oPEMSedeRequest)
+        public IActionResult Grabar(PEMHorarioRequest oPEMHorarioRequest)
         {
             bool respuesta = false;
-            using (ISedeDominio oDominio = new SedeDominio())
+            using (IHorarioDominio oDominio = new HorarioDominio())
             {
-                respuesta = oDominio.Grabar(oPEMSedeRequest);
+                respuesta = oDominio.Grabar(oPEMHorarioRequest);
             }
             if (!respuesta) return NotFound();
 
@@ -53,12 +53,12 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         }
         [HttpPut]
         [Route(Ruta.UriHorario.Editar)]
-        public IActionResult Editar(PEMSedeRequest oPEMSedeRequest)
+        public IActionResult Editar(PEMHorarioRequest oPEMHorarioRequest)
         {
             bool respuesta = false;
-            using (ISedeDominio oDominio = new SedeDominio())
+            using (IHorarioDominio oDominio = new HorarioDominio())
             {
-                respuesta = oDominio.Editar(oPEMSedeRequest);
+                respuesta = oDominio.Editar(oPEMHorarioRequest);
             }
             if (!respuesta) return NotFound();
 
@@ -70,7 +70,7 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         public IActionResult Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest)
         {
             bool respuesta = false;
-            using (ISedeDominio oDominio = new SedeDominio())
+            using (IHorarioDominio oDominio = new HorarioDominio())
             {
                 respuesta = oDominio.Eliminar(oPEMEliminaObjetoRequest);
             }

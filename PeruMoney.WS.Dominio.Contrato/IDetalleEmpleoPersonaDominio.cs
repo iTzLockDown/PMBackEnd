@@ -10,6 +10,6 @@ namespace PeruMoney.WS.Repositorio.Contrato
     {
         IEnumerable<PEMEmpleoPersonaResponse> TraerTodos();
         bool Grabar(PEMEmpleoPersonaRequest oPEMEmpleoPersonaRequest);
-        bool Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest);
+        bool Editar(PEMEmpleoPersonaRequest oPEMEmpleoPersonaRequest);
     }
 }
