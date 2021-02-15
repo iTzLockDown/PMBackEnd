@@ -37,9 +37,9 @@ namespace PeruMoney.WS.Repositorio.Contrato
             string sp = StoredProcedure.USP_USUARIO_GRABAR;
             List<SqlParameterItem> parametros = new List<SqlParameterItem>();
             parametros.Add(new SqlParameterItem("@x_nCodigoPer", SqlDbType.Int, oPEMSedeRequest.CodigoPersona));
-            parametros.Add(new SqlParameterItem("@x_nCodUsuSis", SqlDbType.VarChar, oPEMSedeRequest.Usuario));
+            parametros.Add(new SqlParameterItem("@x_cCodUsuSis", SqlDbType.VarChar, oPEMSedeRequest.Usuario));
             parametros.Add(new SqlParameterItem("@x_cConUsuSis", SqlDbType.VarChar, oPEMSedeRequest.Contrasenia));
-            parametros.Add(new SqlParameterItem("@x_cCodUsuIns", SqlDbType.Int, oPEMSedeRequest.UsuarioRegistra));
+            parametros.Add(new SqlParameterItem("@x_nCodUsuIns", SqlDbType.Int, oPEMSedeRequest.UsuarioRegistra));
 
             using (SqlHelperWS db = new SqlHelperWS(dbContext.PLAPERUMONEY()))
             {
@@ -54,9 +54,9 @@ namespace PeruMoney.WS.Repositorio.Contrato
             List<SqlParameterItem> parametros = new List<SqlParameterItem>();
             parametros.Add(new SqlParameterItem("@x_nCodigoUsu", SqlDbType.Int, oPEMSedeRequest.Codigo));
             parametros.Add(new SqlParameterItem("@x_nCodigoPer", SqlDbType.Int, oPEMSedeRequest.CodigoPersona));
-            parametros.Add(new SqlParameterItem("@x_nCodUsuSis", SqlDbType.VarChar, oPEMSedeRequest.Usuario));
+            parametros.Add(new SqlParameterItem("@x_cCodUsuSis", SqlDbType.VarChar, oPEMSedeRequest.Usuario));
             parametros.Add(new SqlParameterItem("@x_cConUsuSis", SqlDbType.VarChar, oPEMSedeRequest.Contrasenia));
-            parametros.Add(new SqlParameterItem("@x_cCodUsuUpd", SqlDbType.Int, oPEMSedeRequest.UsuarioRegistra));
+            parametros.Add(new SqlParameterItem("@x_nCodUsuUpd", SqlDbType.Int, oPEMSedeRequest.UsuarioRegistra));
 
             using (SqlHelperWS db = new SqlHelperWS(dbContext.PLAPERUMONEY()))
             {
@@ -71,7 +71,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
             string sp = StoredProcedure.USP_USUARIO_ELIMINAR;
             List<SqlParameterItem> parametros = new List<SqlParameterItem>();
             parametros.Add(new SqlParameterItem("@x_nCodigoUsu", SqlDbType.VarChar, oPEMEliminaObjetoRequest.Codigo));
-            parametros.Add(new SqlParameterItem("@x_cCodUsuDel", SqlDbType.Int, oPEMEliminaObjetoRequest.CodigoUsuario));
+            parametros.Add(new SqlParameterItem("@x_nCodUsuDel", SqlDbType.Int, oPEMEliminaObjetoRequest.CodigoUsuario));
 
             using (SqlHelperWS db = new SqlHelperWS(dbContext.PLAPERUMONEY()))
             {

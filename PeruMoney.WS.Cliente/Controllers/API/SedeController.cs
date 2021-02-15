@@ -13,7 +13,7 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 {
     [Route(Ruta.UriSede.Prefijo)]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class SedeController : Controller
     {
         private readonly ILogger<SedeController> _logger;

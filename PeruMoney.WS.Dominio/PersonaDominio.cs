@@ -84,6 +84,24 @@ namespace PeruMoney.WS.Repositorio.Contrato
             }
             return respuesta;
         }
+        public bool EntradaExtra(PEMAsistenciaRequest oPEMAsistenciaRequest)
+        {
+            bool respuesta = false;
+            using (IPersonaRepositorio oRepositorio = new PersonaRepositorio())
+            {
+                respuesta = oRepositorio.EntradaExtra(oPEMAsistenciaRequest);
+            }
+            return respuesta;
+        }
+        public bool SalidaExtra(PEMAsistenciaRequest oPEMAsistenciaRequest)
+        {
+            bool respuesta = false;
+            using (IPersonaRepositorio oRepositorio = new PersonaRepositorio())
+            {
+                respuesta = oRepositorio.SalidaExtra(oPEMAsistenciaRequest);
+            }
+            return respuesta;
+        }
         public void Dispose()
         {
             GC.SuppressFinalize(this);

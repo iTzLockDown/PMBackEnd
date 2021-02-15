@@ -23,7 +23,7 @@ namespace PeruMoney.WS.Repositorio.Seguridad
             PEMUsuarioResponse oUsuario = null;
             string sp = StoredProcedure.USP_USUARIO_AUTH;
             List<SqlParameterItem> parametros = new List<SqlParameterItem>();
-            parametros.Add(new SqlParameterItem("@x_nCodUsuSis", SqlDbType.VarChar, usuario));
+            parametros.Add(new SqlParameterItem("@x_cCodUsuSis", SqlDbType.VarChar, usuario));
             parametros.Add(new SqlParameterItem("@x_cConUsuSis", SqlDbType.VarChar, password));
             
             using (SqlHelperWS oSqlHelperWS = new SqlHelperWS(dbContext.PLAPERUMONEY()))
@@ -44,7 +44,7 @@ namespace PeruMoney.WS.Repositorio.Seguridad
             PEMUsuarioResponse oUsuario = null;
             string sp = StoredProcedure.USP_USUARIO_AUTH;
             List<SqlParameterItem> parametros = new List<SqlParameterItem>();
-            parametros.Add(new SqlParameterItem("@x_nCodUsuSis", SqlDbType.VarChar, usuario));
+            parametros.Add(new SqlParameterItem("@x_cCodUsuSis", SqlDbType.VarChar, usuario));
             parametros.Add(new SqlParameterItem("@x_cConUsuSis", SqlDbType.VarChar, password));
 
             using (SqlHelperWS oSqlHelperWS = new SqlHelperWS(dbContext.PLAPERUMONEY()))

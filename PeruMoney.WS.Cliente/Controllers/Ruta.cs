@@ -29,6 +29,8 @@ namespace PeruMoney.WS.Cliente.Controllers
             public const string Prefijo = "api/asistencia";
             public const string Entrada = "entrada";
             public const string Salida = "salida";
+            public const string EntradaExtra = "entradaextra";
+            public const string SalidaExtra = "salidaextra";
             public const string TraerPersonal = "traerpersonal";
         }
 

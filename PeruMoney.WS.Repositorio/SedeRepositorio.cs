@@ -34,9 +34,10 @@ namespace PeruMoney.WS.Repositorio.Contrato
             bool respuesta = false;
             string sp = StoredProcedure.USP_SEDE_GRABAR;
             List<SqlParameterItem> parametros = new List<SqlParameterItem>();
-            parametros.Add(new SqlParameterItem("@x_nNombreSed", SqlDbType.VarChar, oPEMSedeRequest.Nombre));
-            parametros.Add(new SqlParameterItem("@x_nDireciSed", SqlDbType.VarChar, oPEMSedeRequest.Direccion));
-            parametros.Add(new SqlParameterItem("@x_cCodUsuIns", SqlDbType.Int, oPEMSedeRequest.UsuarioRegistra));
+            parametros.Add(new SqlParameterItem("@x_cNombreSed", SqlDbType.VarChar, oPEMSedeRequest.Nombre));
+            parametros.Add(new SqlParameterItem("@x_cDireccSed", SqlDbType.VarChar, oPEMSedeRequest.Direccion));
+            parametros.Add(new SqlParameterItem("@x_cTelefoSed", SqlDbType.VarChar, oPEMSedeRequest.Telefono));
+            parametros.Add(new SqlParameterItem("@x_nCodUsuIns", SqlDbType.Int, oPEMSedeRequest.UsuarioRegistra));
             using (SqlHelperWS db = new SqlHelperWS(dbContext.PLAPERUMONEY()))
             {
                 respuesta = db.ExecuteNonQuery(sp, parametros);
@@ -51,9 +52,12 @@ namespace PeruMoney.WS.Repositorio.Contrato
             string sp = StoredProcedure.USP_SEDE_EDITAR;
             List<SqlParameterItem> parametros = new List<SqlParameterItem>();
             parametros.Add(new SqlParameterItem("@x_nCodigoSed", SqlDbType.Int, oPEMSedeRequest.Codigo));
-            parametros.Add(new SqlParameterItem("@x_nNombreSed", SqlDbType.VarChar, oPEMSedeRequest.Nombre));
-            parametros.Add(new SqlParameterItem("@x_nDireciSed", SqlDbType.VarChar, oPEMSedeRequest.Direccion));
-            parametros.Add(new SqlParameterItem("@x_cCodUsuIns", SqlDbType.Int, oPEMSedeRequest.UsuarioRegistra));
+            parametros.Add(new SqlParameterItem("@x_cNombreSed", SqlDbType.VarChar, oPEMSedeRequest.Nombre));
+            parametros.Add(new SqlParameterItem("@x_cDireccSed", SqlDbType.VarChar, oPEMSedeRequest.Direccion));
+            parametros.Add(new SqlParameterItem("@x_cTelefoSed", SqlDbType.VarChar, oPEMSedeRequest.Telefono));
+            parametros.Add(new SqlParameterItem("@x_nCodUsuIns", SqlDbType.Int, oPEMSedeRequest.UsuarioRegistra));
+
+
             using (SqlHelperWS db = new SqlHelperWS(dbContext.PLAPERUMONEY()))
             {
                 respuesta = db.ExecuteNonQuery(sp, parametros);
@@ -68,7 +72,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
             string sp = StoredProcedure.USP_SEDE_ELIMINAR;
             List<SqlParameterItem> parametros = new List<SqlParameterItem>();
             parametros.Add(new SqlParameterItem("@x_nCodigoSed", SqlDbType.Int, oPEMEliminaObjetoRequest.Codigo));
-            parametros.Add(new SqlParameterItem("@x_cCodUsuDel", SqlDbType.Int, oPEMEliminaObjetoRequest.CodigoUsuario));
+            parametros.Add(new SqlParameterItem("@x_nCodUsuDel", SqlDbType.Int, oPEMEliminaObjetoRequest.CodigoUsuario));
             using (SqlHelperWS db = new SqlHelperWS(dbContext.PLAPERUMONEY()))
             {
                 respuesta = db.ExecuteNonQuery(sp, parametros);

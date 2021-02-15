@@ -11,5 +11,6 @@ namespace PeruMoney.WS.Modelo.Request
     {
         public string DocumentoPersona{ get; set; }     //x_cDocIdePer
         public string CodigoSede{ get; set; }     //x_nCodigoSed
+        public int CodigoHorario { get; set; }  //x_nHorSedAsis
     }
 }

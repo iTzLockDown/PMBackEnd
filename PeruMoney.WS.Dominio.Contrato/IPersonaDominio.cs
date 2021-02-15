@@ -18,5 +18,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
 
         bool Entrada(PEMAsistenciaRequest oPEMAsistenciaRequest);
         bool Salida(PEMAsistenciaRequest oPEMAsistenciaRequest);
+        bool EntradaExtra(PEMAsistenciaRequest oPEMAsistenciaRequest);
+        bool SalidaExtra(PEMAsistenciaRequest oPEMAsistenciaRequest);
     }
 }

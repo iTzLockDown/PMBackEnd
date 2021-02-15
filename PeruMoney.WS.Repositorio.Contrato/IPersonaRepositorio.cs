@@ -16,6 +16,8 @@ namespace PeruMoney.WS.Repositorio.Contrato
         bool Editar(PEMPersonaRequest oPEMSedeRequest);
         bool Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest);
         bool Entrada(PEMAsistenciaRequest oPEMAsistenciaRequest);
-        bool Salida(PEMAsistenciaRequest oPEMAsistenciaRequest);
+        bool Salida(PEMAsistenciaRequest oPEMAsistenciaRequest); 
+        bool EntradaExtra(PEMAsistenciaRequest oPEMAsistenciaRequest);
+        bool SalidaExtra(PEMAsistenciaRequest oPEMAsistenciaRequest);
     }
 }

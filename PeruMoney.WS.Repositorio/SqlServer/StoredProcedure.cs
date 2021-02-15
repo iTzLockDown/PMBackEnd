@@ -22,6 +22,8 @@ namespace PeruMoney.WS.Repositorio.Contrato.SqlServer
 
         public const string USP_PERSONAL_REGISTRAENTRADA = "PLA_RegEntPer_sp";
         public const string USP_PERSONAL_REGISTRASALIDA = "PLA_RegSalPer_sp";
+        public const string USP_PERSONAL_REGISTRAENTRADA_EXTRA = "PLA_RegEntExt_sp";
+        public const string USP_PERSONAL_REGISTRASALIDA_EXTRA = "PLA_RegSalExt_sp";
         #endregion
 
         #region Personal
@@ -38,9 +40,105 @@ namespace PeruMoney.WS.Repositorio.Contrato.SqlServer
         public const string USP_SEDE_ELIMINAR = "PLA_DelSedes_sp";
         #endregion
 
-        #region Registro de Actividad
-        public const string USP_ACTIVIDAD_INGRESAR = "PLA_RegEntPer_sp";
-        public const string USP_ACTIVIDAD_SALIR = "PLA_RegSalPer_sp";
+        #region Horario
+
+        public const string USP_HORARIO_TRAERTODOS = "PLA_LisHorari_sp";
+        public const string USP_HORARIO_GRABAR = "PLA_InsertHor_sp";
+        public const string USP_HORARIO_EDITAR = "PLA_UpdateHor_sp";
+        public const string USP_HORARIO_ELIMINAR = "PLA_DeleteHor_sp";
+
         #endregion
+
+        #region Horario por Agencia
+
+        public const string USP_HORARIO_AGENCIA_TRAERTODOS = "PLA_LisHorAge_sp";
+        public const string USP_HORARIO_AGENCIA_GRABAR = "PLA_InsHorAge_sp";
+        public const string USP_HORARIO_AGENCIA_ELIMINAR = "PLA_DelHorAge_sp";
+
+
+        #endregion
+
+        #region Ocupacion
+
+        public const string USP_OCUPACION_TRAERTODOS = "PLA_LisOcupac_sp";
+        public const string USP_OCUPACION_GRABAR = "PLA_InsertOcu_sp";
+        public const string USP_OCUPACION_EDITAR = "PLA_UpdateOcu_sp";
+        public const string USP_OCUPACION_ELIMINAR = "PLA_DeleteOcu_sp";
+
+        #endregion
+
+        #region Disciplina
+
+        public const string USP_DISCIPLINA_TRAERTODOS = "PLA_LisDicPer_sp";
+        public const string USP_DISCIPLINA_GRABAR = "PLA_InsDicPer_sp";
+        public const string USP_DISCIPLINA_EDITAR = "PLA_UpdDicPer_sp";
+        public const string USP_DISCIPLINA_ELIMINAR = "PLA_DelDicPer_sp";
+
+        #endregion
+
+        #region Detalle de Empleo
+        public const string USP_DETALLEEMPLEO_TRAERTODOS = "PLA_LisDetEmp_sp";
+        public const string USP_DETALLEEMPLEO_GRABAR = "PLA_InsDetEmp_sp";
+        public const string USP_DETALLEEMPLEO_EDITAR = "PLA_UpdDetEmp_sp";
+
+        #endregion
+
+        #region Eduacion del Persona
+        public const string USP_EDUCACION_TRAERTODOS = "PLA_LisEduPer_sp";
+        public const string USP_EDUCACION_GRABAR = "PLA_InsEduPer_sp";
+        public const string USP_EDUCACION_EDITAR = "PLA_UpdEduPer_sp";
+
+
+
+
+        #endregion
+
+        #region Familiares de Persona
+        public const string USP_FAMILIA_TRAERTODOS = "PLA_LisFamPer_sp";
+        public const string USP_FAMILIA_GRABAR = "PLA_InsFamPer_sp";
+        public const string USP_FAMILIA_EDITAR = "PLA_UpdFamPer_sp";
+        public const string USP_FAMILIA_ELIMINAR = "PLA_DelFamPer_sp";
+
+        #endregion
+
+        #region Cuenta de Persona
+        public const string USP_CUENTA_TRAERTODOS = "PLA_LisCuePer_sp";
+        public const string USP_CUENTA_GRABAR = "PLA_InsCuePer_sp";
+        public const string USP_CUENTA_EDITAR = "PLA_UpdCuePer_sp";
+        public const string USP_CUENTA_ELIMINA = "PLA_DelCuePer_sp";
+
+        #endregion
+
+
+
+        #region Planilla
+        public const string USP_PLANILLA_TRAERTODOS = "PLA_LisPlaPer_sp";
+        public const string USP_PLANILLA_EDITAR = "PLA_InsPlaPer_sp";
+
+
+
+        #endregion
+
+        #region Empleo Persona
+
+        public const string USP_EMPLEOPERSONA_TRAERTODOS = "PLA_LisEmpPer_sp";
+        public const string USP_EMPLEOPERSONA_GRABAR = "PLA_InsEmpPer_sp";
+        public const string USP_EMPLEOPERSONA_EDITAR = "PLA_UpdEmpPer_sp";
+        public const string USP_EMPLEOPERSONA_ELIMINAR = "PLA_DelEmpPer_sp";
+
+
+        #endregion
+
+        #region AFP
+
+        public const string USP_AFP_TRAERTODOS = "PLA_LisAfpEmp_sp";
+        public const string USP_AFP_GRABAR = "PLA_InsAfpEmp_sp";
+        public const string USP_AFP_EDITAR = "PLA_UpdAfpEmp_sp";
+        public const string USP_AFP_ELIMINAR = "PLA_DelAfpEmp_sp";
+        
+        #endregion
+ 
+
+
     }
 }

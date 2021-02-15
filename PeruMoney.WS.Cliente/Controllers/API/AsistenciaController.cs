@@ -52,6 +52,34 @@ namespace PeruMoney.WS.Cliente.Controllers.API
             return Ok(respuesta);
         }
 
+        [HttpPost]
+        [Route(Ruta.UriAsistencia.EntradaExtra)]
+        public IActionResult EntradaExtra(PEMAsistenciaRequest oPEMAsistenciaRequest)
+        {
+            bool respuesta = false;
+            using (IPersonaDominio oDominio = new PersonaDominio())
+            {
+                respuesta = oDominio.EntradaExtra(oPEMAsistenciaRequest);
+            }
+            if (!respuesta) return NotFound();
+
+            return Ok(respuesta);
+        }
+
+        [HttpPut]
+        [Route(Ruta.UriAsistencia.SalidaExtra)]
+        public IActionResult SalidaExtra(PEMAsistenciaRequest oPEMAsistenciaRequest)
+        {
+            bool respuesta = false;
+            using (IPersonaDominio oDominio = new PersonaDominio())
+            {
+                respuesta = oDominio.SalidaExtra(oPEMAsistenciaRequest);
+            }
+            if (!respuesta) return NotFound();
+
+            return Ok(respuesta);
+        }
+
         [HttpGet]
         [Route(Ruta.UriAsistencia.TraerPersonal)]
         public IActionResult TraerUno(string documento)

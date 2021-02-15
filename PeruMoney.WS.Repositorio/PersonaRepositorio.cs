@@ -71,14 +71,18 @@ namespace PeruMoney.WS.Repositorio.Contrato
             string sp = StoredProcedure.USP_PERSONAL_EDITAR;
             List<SqlParameterItem> parametros = new List<SqlParameterItem>();
             parametros.Add(new SqlParameterItem( "@x_nCodigoPer", SqlDbType.VarChar, oPEMSedeRequest.Codigo));
-            parametros.Add(new SqlParameterItem( "@x_cApePatPer", SqlDbType.VarChar, oPEMSedeRequest.ApellidoPaterno));
-            parametros.Add(new SqlParameterItem( "@x_cApeMatPer", SqlDbType.VarChar, oPEMSedeRequest.ApellidoMaterno));
-            parametros.Add(new SqlParameterItem( "@x_cNombrePer", SqlDbType.VarChar, oPEMSedeRequest.Nombre));
-            parametros.Add(new SqlParameterItem( "@x_cDocIdePer", SqlDbType.VarChar, oPEMSedeRequest.Documento));
-            parametros.Add(new SqlParameterItem( "@x_cDireccPer", SqlDbType.VarChar, oPEMSedeRequest.Direccion));
-            parametros.Add(new SqlParameterItem( "@x_cTelefoPer", SqlDbType.VarChar, oPEMSedeRequest.Telefono));
-            parametros.Add(new SqlParameterItem( "@x_cCorElePer", SqlDbType.VarChar, oPEMSedeRequest.Email));
-            parametros.Add(new SqlParameterItem( "@x_cCodUsuUpd", SqlDbType.Int, oPEMSedeRequest.UsuarioRegistra));
+            parametros.Add(new SqlParameterItem("@x_cApePatPer", SqlDbType.VarChar, oPEMSedeRequest.ApellidoPaterno));
+            parametros.Add(new SqlParameterItem("@x_cApeMatPer", SqlDbType.VarChar, oPEMSedeRequest.ApellidoMaterno));
+            parametros.Add(new SqlParameterItem("@x_cNombrePer", SqlDbType.VarChar, oPEMSedeRequest.Nombre));
+            parametros.Add(new SqlParameterItem("@x_cTipDocPer", SqlDbType.Int, oPEMSedeRequest.TipoDocumento));
+            parametros.Add(new SqlParameterItem("@x_cDocIdePer", SqlDbType.VarChar, oPEMSedeRequest.Documento));
+            parametros.Add(new SqlParameterItem("@x_cDireccPer", SqlDbType.VarChar, oPEMSedeRequest.Direccion));
+            parametros.Add(new SqlParameterItem("@x_cTelefoPer", SqlDbType.VarChar, oPEMSedeRequest.Telefono));
+            parametros.Add(new SqlParameterItem("@x_cTelMovPer", SqlDbType.VarChar, oPEMSedeRequest.Celular));
+            parametros.Add(new SqlParameterItem("@x_cCorElePer", SqlDbType.VarChar, oPEMSedeRequest.Email));
+            parametros.Add(new SqlParameterItem("@x_cGeneroPer", SqlDbType.VarChar, oPEMSedeRequest.Genero));
+            parametros.Add(new SqlParameterItem("@x_nCodEstCiv", SqlDbType.Int, oPEMSedeRequest.EstadoCivil));
+            parametros.Add(new SqlParameterItem("@x_nCodUsuIns", SqlDbType.Int, oPEMSedeRequest.UsuarioRegistra));
             using (SqlHelperWS db = new SqlHelperWS(dbContext.PLAPERUMONEY()))
             {
                 respuesta = db.ExecuteNonQuery(sp, parametros);
@@ -92,7 +96,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
             string sp = StoredProcedure.USP_PERSONAL_ELIMINAR;
             List<SqlParameterItem> parametros = new List<SqlParameterItem>();
             parametros.Add(new SqlParameterItem("@x_nCodigoPer", SqlDbType.VarChar, oPEMEliminaObjetoRequest.Codigo));
-            parametros.Add(new SqlParameterItem("@x_cCodUsuDel", SqlDbType.VarChar, oPEMEliminaObjetoRequest.CodigoUsuario));
+            parametros.Add(new SqlParameterItem("@x_NCodUsuDel", SqlDbType.VarChar, oPEMEliminaObjetoRequest.CodigoUsuario));
             using (SqlHelperWS db = new SqlHelperWS(dbContext.PLAPERUMONEY()))
             {
                 respuesta = db.ExecuteNonQuery(sp, parametros);
@@ -109,11 +113,16 @@ namespace PeruMoney.WS.Repositorio.Contrato
             parametros.Add(new SqlParameterItem("@x_cApePatPer", SqlDbType.VarChar, oPEMSedeRequest.ApellidoPaterno));
             parametros.Add(new SqlParameterItem("@x_cApeMatPer", SqlDbType.VarChar, oPEMSedeRequest.ApellidoMaterno));
             parametros.Add(new SqlParameterItem("@x_cNombrePer", SqlDbType.VarChar, oPEMSedeRequest.Nombre));
+            parametros.Add(new SqlParameterItem("@x_cTipDocPer", SqlDbType.Int, oPEMSedeRequest.TipoDocumento));
             parametros.Add(new SqlParameterItem("@x_cDocIdePer", SqlDbType.VarChar, oPEMSedeRequest.Documento));
             parametros.Add(new SqlParameterItem("@x_cDireccPer", SqlDbType.VarChar, oPEMSedeRequest.Direccion));
             parametros.Add(new SqlParameterItem("@x_cTelefoPer", SqlDbType.VarChar, oPEMSedeRequest.Telefono));
+            parametros.Add(new SqlParameterItem("@x_cTelMovPer", SqlDbType.VarChar, oPEMSedeRequest.Celular));
             parametros.Add(new SqlParameterItem("@x_cCorElePer", SqlDbType.VarChar, oPEMSedeRequest.Email));
-            parametros.Add(new SqlParameterItem("@x_cCodUsuIns", SqlDbType.Int, oPEMSedeRequest.UsuarioRegistra));
+            parametros.Add(new SqlParameterItem("@x_cGeneroPer", SqlDbType.VarChar, oPEMSedeRequest.Genero));
+            parametros.Add(new SqlParameterItem("@x_nCodEstCiv", SqlDbType.Int, oPEMSedeRequest.EstadoCivil));
+            parametros.Add(new SqlParameterItem("@x_nCodUsuIns", SqlDbType.Int, oPEMSedeRequest.UsuarioRegistra));
+
             using (SqlHelperWS db = new SqlHelperWS(dbContext.PLAPERUMONEY()))
             {
                 respuesta = db.ExecuteNonQuery(sp, parametros);
@@ -128,6 +137,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
             List<SqlParameterItem> parametros = new List<SqlParameterItem>();
             parametros.Add(new SqlParameterItem("@x_cDocIdePer", SqlDbType.VarChar, oPEMAsistenciaRequest.DocumentoPersona));
             parametros.Add(new SqlParameterItem("@x_nCodigoSed", SqlDbType.VarChar, oPEMAsistenciaRequest.CodigoSede));
+            parametros.Add(new SqlParameterItem("x_nHorSedAsi", SqlDbType.Int, oPEMAsistenciaRequest.CodigoHorario ));
             using (SqlHelperWS db = new SqlHelperWS(dbContext.PLAPERUMONEY()))
             {
                 respuesta = db.ExecuteNonQuery(sp, parametros);
@@ -148,6 +158,35 @@ namespace PeruMoney.WS.Repositorio.Contrato
             }
             return respuesta;
         }
+
+        public bool EntradaExtra(PEMAsistenciaRequest oPEMAsistenciaRequest)
+        {
+            bool respuesta = false;
+            string sp = StoredProcedure.USP_PERSONAL_REGISTRAENTRADA_EXTRA;
+            List<SqlParameterItem> parametros = new List<SqlParameterItem>();
+            parametros.Add(new SqlParameterItem("@x_cDocIdePer", SqlDbType.VarChar, oPEMAsistenciaRequest.DocumentoPersona));
+            parametros.Add(new SqlParameterItem("@x_nCodigoSed", SqlDbType.VarChar, oPEMAsistenciaRequest.CodigoSede));
+            using (SqlHelperWS db = new SqlHelperWS(dbContext.PLAPERUMONEY()))
+            {
+                respuesta = db.ExecuteNonQuery(sp, parametros);
+            }
+            return respuesta;
+        }
+        public bool SalidaExtra(PEMAsistenciaRequest oPEMAsistenciaRequest)
+        {
+
+            bool respuesta = false;
+            string sp = StoredProcedure.USP_PERSONAL_REGISTRASALIDA_EXTRA;
+            List<SqlParameterItem> parametros = new List<SqlParameterItem>();
+            parametros.Add(new SqlParameterItem("@x_cDocIdePer", SqlDbType.VarChar, oPEMAsistenciaRequest.DocumentoPersona));
+            parametros.Add(new SqlParameterItem("@x_nCodSedExt", SqlDbType.VarChar, oPEMAsistenciaRequest.CodigoSede));
+            using (SqlHelperWS db = new SqlHelperWS(dbContext.PLAPERUMONEY()))
+            {
+                respuesta = db.ExecuteNonQuery(sp, parametros);
+            }
+            return respuesta;
+        }
+
         #endregion
 
         #region DataReader
@@ -162,9 +201,11 @@ namespace PeruMoney.WS.Repositorio.Contrato
                 Documento = reader.GetValue(4).ToString().Trim(),
                 Direccion = reader.GetValue(5).ToString().Trim(),
                 Telefono = reader.GetValue(6).ToString().Trim(),
-                Email = reader.GetValue(7).ToString().Trim(),
-                Estado = reader.GetValue(8).ToString().Trim(),
-
+                Celular = reader.GetValue(7).ToString().Trim(),
+                Email = reader.GetValue(8).ToString().Trim(),
+                Genero = reader.GetValue(9).ToString().Trim(),
+                EstadoCivil = reader.GetValue(10).ToString().Trim(),
+                Estado = reader.GetValue(11).ToString().Trim(),
             };
         }
 

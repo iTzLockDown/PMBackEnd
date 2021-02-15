@@ -7,12 +7,3 @@ D:\Proyectos\PeruMoney1\BackEnd\PeruMoneyWs\PeruMoney.WS.Herramienta\obj\Debug\n
 D:\Proyectos\PeruMoney1\BackEnd\PeruMoneyWs\PeruMoney.WS.Herramienta\obj\Debug\netcoreapp3.1\PeruMoney.WS.Herramienta.csproj.CoreCompileInputs.cache
 D:\Proyectos\PeruMoney1\BackEnd\PeruMoneyWs\PeruMoney.WS.Herramienta\obj\Debug\netcoreapp3.1\PeruMoney.WS.Herramienta.dll
 D:\Proyectos\PeruMoney1\BackEnd\PeruMoneyWs\PeruMoney.WS.Herramienta\obj\Debug\netcoreapp3.1\PeruMoney.WS.Herramienta.pdb
-D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Herramienta\bin\Debug\netcoreapp3.1\PeruMoney.WS.Herramienta.deps.json
-D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Herramienta\bin\Debug\netcoreapp3.1\PeruMoney.WS.Herramienta.dll
-D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Herramienta\bin\Debug\netcoreapp3.1\PeruMoney.WS.Herramienta.pdb
-D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Herramienta\obj\Debug\netcoreapp3.1\PeruMoney.WS.Herramienta.csprojAssemblyReference.cache
-D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Herramienta\obj\Debug\netcoreapp3.1\PeruMoney.WS.Herramienta.AssemblyInfoInputs.cache
-D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Herramienta\obj\Debug\netcoreapp3.1\PeruMoney.WS.Herramienta.AssemblyInfo.cs
-D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Herramienta\obj\Debug\netcoreapp3.1\PeruMoney.WS.Herramienta.csproj.CoreCompileInputs.cache
-D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Herramienta\obj\Debug\netcoreapp3.1\PeruMoney.WS.Herramienta.dll
-D:\Proyectos\AZURE\PeruMoney\PeruMoney.WS.Herramienta\obj\Debug\netcoreapp3.1\PeruMoney.WS.Herramienta.pdb
