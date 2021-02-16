@@ -13,7 +13,7 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 {
     [Route(Ruta.UriEmpleo.Prefijo)]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class EmpleoController : Controller
     {
         private readonly ILogger<EmpleoController> _logger;
@@ -25,12 +25,12 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         [HttpGet]
         [Route(Ruta.UriEmpleo.ListaTodos)]
         [AllowAnonymous]
-        public IActionResult TraerTodos()
+        public IActionResult TraerTodos(int codigoPersona)
         {
             IEnumerable<PEMEmpleoResponse> oLista = null;
             using (IEmpleoDominio oDominio = new EmpleoDominio())
             {
-                oLista = oDominio.TraerTodos();
+                oLista = oDominio.TraerTodos(codigoPersona);
             }
             if (oLista == null) return NotFound();
 
@@ -65,18 +65,5 @@ namespace PeruMoney.WS.Cliente.Controllers.API
             return Ok(respuesta);
         }
 
-        [HttpPut]
-        [Route(Ruta.UriEmpleo.Eliminar)]
-        public IActionResult Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest)
-        {
-            bool respuesta = false;
-            using (IEmpleoDominio oDominio = new EmpleoDominio())
-            {
-                respuesta = oDominio.Eliminar(oPEMEliminaObjetoRequest);
-            }
-            if (!respuesta) return NotFound();
-
-            return Ok(respuesta);
-        }
     }
 }

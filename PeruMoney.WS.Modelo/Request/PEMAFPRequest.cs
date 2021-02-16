@@ -13,7 +13,7 @@ namespace PeruMoney.WS.Modelo.Request
         public double PrimaSeguro { get; set; }        //@x_nPriSegAfp
         public double AFP { get; set; }        //@x_cAdmFonPen
         public double ComisionSobreFlujo { get; set; }        //@x_nComSobFlu
-        public double ProcentajeObligatorio { get; set; }        //@x_nPorOblAfp
+        public double PorcentajeObligatorio { get; set; }        //@x_nPorOblAfp
         public double RemuneracionMaxima { get; set; }        //@x_nRemMaxAse
         public int UsuarioRegistra { get; set; }        //@x_nCodUsuIns
 

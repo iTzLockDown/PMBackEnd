@@ -13,7 +13,7 @@ namespace PeruMoney.WS.Modelo.Request
         public string TipoMoneda { get; set; }  //@x_cTipMoneda
         public string BancoCTS { get; set; }  //@x_cBanCobCts
         public string NumeroCTS { get; set; }  //@x_cNumCueCts
-        public int Type { get; set; }  //@x_nCodUsuIns
+        public int UsuarioRegistra { get; set; }  //@x_nCodUsuIns
 
     }
 }

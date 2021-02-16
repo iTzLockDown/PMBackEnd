@@ -16,9 +16,9 @@ namespace PeruMoney.WS.Modelo.Request
         public string AporteActivo { get; set; }    //@x_cApoActPer
         public string SeguroVida { get; set; }    //@x_cSegVidLey
         public string NumeroPolizaVida { get; set; }    //@x_cNumPolVid
-        public string CTR { get; set; }    //@x_cSegComTra
+        public string SCT { get; set; }    //@x_cSegComTra
         public string NumeroPolizaESS { get; set; }    //@x_cNumPolEss
-        public string NumeroPoliza { get; set; }    //@x_cNumPolPen
+        public string NumeroPolizaPen { get; set; }    //@x_cNumPolPen
         public int UsuarioRegistra { get; set; }    //@x_nCodUsuIns
     }
 }

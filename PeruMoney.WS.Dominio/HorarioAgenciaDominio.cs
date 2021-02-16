@@ -10,12 +10,12 @@ namespace PeruMoney.WS.Repositorio.SqlServer
     public class HorarioAgenciaDominio : IHorarioAgenciaDominio
 
     {
-        public IEnumerable<PEMHorarioAgenciaResponse> TraerTodos()
+        public IEnumerable<PEMHorarioAgenciaResponse> TraerTodos(int codigoSede)
         {
             IEnumerable<PEMHorarioAgenciaResponse> oLista = null;
             using (IHorarioAgenciaRepositorio oRepositorio = new HorarioAgenciaRepositorio())
             {
-                oLista = oRepositorio.TraerTodos();
+                oLista = oRepositorio.TraerTodos(codigoSede);
             }
 
             return oLista;
@@ -31,12 +31,12 @@ namespace PeruMoney.WS.Repositorio.SqlServer
 
             return respuesta;
         }
-        public bool Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest)
+        public bool Eliminar(PEMHorarioAgenciaRequest oPEMHorarioAgenciaRequest)
         {
             bool respuesta = false;
             using (IHorarioAgenciaRepositorio oRepositorio = new HorarioAgenciaRepositorio())
             {
-                respuesta = oRepositorio.Eliminar(oPEMEliminaObjetoRequest);
+                respuesta = oRepositorio.Eliminar(oPEMHorarioAgenciaRequest);
             }
 
             return respuesta;

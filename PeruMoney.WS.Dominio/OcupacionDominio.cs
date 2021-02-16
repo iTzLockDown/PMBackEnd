@@ -6,13 +6,13 @@ using PeruMoney.WS.Modelo.Response;
 
 namespace PeruMoney.WS.Repositorio.Contrato
 {
-    public class OcupacioDominio : IOcupacioDominio
+    public class OcupacionDominio : IOcupacionDominio
 
     {
         public IEnumerable<PEMOcupacionResponse> TraerTodos()
         {
             IEnumerable<PEMOcupacionResponse> oLista = null;
-            using (IOcupacioRepositorio oRepositorio = new OcupacioRepositorio())
+            using (IOcupacionRepositorio oRepositorio = new OcupacionRepositorio())
             {
                 oLista = oRepositorio.TraerTodos();
             }
@@ -22,7 +22,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
         public bool Grabar(PEMOcupacionRequest oPEMOcupacionRequest)
         {
             bool respuesta = false;
-            using (IOcupacioRepositorio oRepositorio = new OcupacioRepositorio())
+            using (IOcupacionRepositorio oRepositorio = new OcupacionRepositorio())
             {
                 respuesta = oRepositorio.Grabar(oPEMOcupacionRequest);
             }
@@ -32,7 +32,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
         public bool Editar(PEMOcupacionRequest oPEMOcupacionRequest)
         {
             bool respuesta = false;
-            using (IOcupacioRepositorio oRepositorio = new OcupacioRepositorio())
+            using (IOcupacionRepositorio oRepositorio = new OcupacionRepositorio())
             {
                 respuesta = oRepositorio.Editar(oPEMOcupacionRequest);
             }
@@ -42,7 +42,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
         public bool Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest)
         {
             bool respuesta = false;
-            using (IOcupacioRepositorio oRepositorio = new OcupacioRepositorio())
+            using (IOcupacionRepositorio oRepositorio = new OcupacionRepositorio())
             {
                 respuesta = oRepositorio.Eliminar(oPEMEliminaObjetoRequest);
             }

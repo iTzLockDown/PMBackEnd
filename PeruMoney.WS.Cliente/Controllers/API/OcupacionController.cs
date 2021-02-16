@@ -11,26 +11,26 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace PeruMoney.WS.Cliente.Controllers.API
 {
-    [Route(Ruta.UriFamiliaPersona.Prefijo)]
+    [Route(Ruta.UriOcupacion.Prefijo)]
     [ApiController]
     [Authorize]
-    public class FamiliarController : Controller
+    public class OcupacionController : Controller
     {
-        private readonly ILogger<FamiliarController> _logger;
+        private readonly ILogger<OcupacionController> _logger;
 
-        public FamiliarController(ILogger<FamiliarController> logger)
+        public OcupacionController(ILogger<OcupacionController> logger)
         {
             _logger = logger;
         }
         [HttpGet]
-        [Route(Ruta.UriFamiliaPersona.ListaTodos)]
+        [Route(Ruta.UriOcupacion.ListaTodos)]
         [AllowAnonymous]
-        public IActionResult TraerTodos(int codigoPersona)
+        public IActionResult TraerTodos()
         {
-            IEnumerable<PEMFamiliaPersonaResponse> oLista = null;
-            using (IFamiliaPersonaIDominio oDominio = new FamiliaPersonaIDominio())
+            IEnumerable<PEMOcupacionResponse> oLista = null;
+            using (IOcupacionDominio oDominio = new OcupacionDominio())
             {
-                oLista = oDominio.TraerTodos(codigoPersona);
+                oLista = oDominio.TraerTodos();
             }
             if (oLista == null) return NotFound();
 
@@ -39,26 +39,26 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 
 
         [HttpPost]
-        [Route(Ruta.UriFamiliaPersona.Grabar)]
-        public IActionResult Grabar(PEMFamiliaPersonalRequest oPEMFamiliaPersonalRequest)
+        [Route(Ruta.UriOcupacion.Grabar)]
+        public IActionResult Grabar(PEMOcupacionRequest oPEMOcupacionRequest)
         {
             bool respuesta = false;
-            using (IFamiliaPersonaIDominio oDominio = new FamiliaPersonaIDominio())
+            using (IOcupacionDominio oDominio = new OcupacionDominio())
             {
-                respuesta = oDominio.Grabar(oPEMFamiliaPersonalRequest);
+                respuesta = oDominio.Grabar(oPEMOcupacionRequest);
             }
             if (!respuesta) return NotFound();
 
             return Ok(respuesta);
         }
         [HttpPut]
-        [Route(Ruta.UriFamiliaPersona.Editar)]
-        public IActionResult Editar(PEMFamiliaPersonalRequest oPEMFamiliaPersonalRequest)
+        [Route(Ruta.UriOcupacion.Editar)]
+        public IActionResult Editar(PEMOcupacionRequest oPEMOcupacionRequest)
         {
             bool respuesta = false;
-            using (IFamiliaPersonaIDominio oDominio = new FamiliaPersonaIDominio())
+            using (IOcupacionDominio oDominio = new OcupacionDominio())
             {
-                respuesta = oDominio.Editar(oPEMFamiliaPersonalRequest);
+                respuesta = oDominio.Editar(oPEMOcupacionRequest);
             }
             if (!respuesta) return NotFound();
 
@@ -66,11 +66,11 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         }
 
         [HttpPut]
-        [Route(Ruta.UriFamiliaPersona.Eliminar)]
+        [Route(Ruta.UriOcupacion.Eliminar)]
         public IActionResult Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest)
         {
             bool respuesta = false;
-            using (IFamiliaPersonaIDominio oDominio = new FamiliaPersonaIDominio())
+            using (IOcupacionDominio oDominio = new OcupacionDominio())
             {
                 respuesta = oDominio.Eliminar(oPEMEliminaObjetoRequest);
             }

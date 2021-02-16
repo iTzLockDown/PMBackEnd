@@ -8,7 +8,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
 {
     public interface ICuentaPersonaRepositorio:IDisposable
     {
-        IEnumerable<PEMCuentaPersonaResponse> TraerTodos();
+        IEnumerable<PEMCuentaPersonaResponse> TraerTodos(int codigoPersona);
         bool Grabar(PEMCuentaPersonaRequest oPEMCuentaPersonaRequest);
         bool Editar(PEMCuentaPersonaRequest oPEMCuentaPersonaRequest);
         bool Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest);

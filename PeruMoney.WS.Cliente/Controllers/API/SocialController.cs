@@ -13,7 +13,7 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 {
     [Route(Ruta.UriSocial.Prefijo)]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class SocialController : Controller
     {
         private readonly ILogger<SocialController> _logger;
@@ -25,12 +25,12 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         [HttpGet]
         [Route(Ruta.UriSocial.ListaTodos)]
         [AllowAnonymous]
-        public IActionResult TraerTodos()
+        public IActionResult TraerTodos(int codigoPersona)
         {
             IEnumerable<PEMSocialPersonaResponse> oLista = null;
             using (ISocialPersonaDominio oDominio = new SocialPersonaDominio())
             {
-                oLista = oDominio.TraerTodos();
+                oLista = oDominio.TraerTodos(codigoPersona);
             }
             if (oLista == null) return NotFound();
 

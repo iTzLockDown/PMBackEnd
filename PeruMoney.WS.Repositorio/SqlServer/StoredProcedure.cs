@@ -89,10 +89,6 @@ namespace PeruMoney.WS.Repositorio.Contrato.SqlServer
         public const string USP_EDUCACION_TRAERTODOS = "PLA_LisEduPer_sp";
         public const string USP_EDUCACION_GRABAR = "PLA_InsEduPer_sp";
         public const string USP_EDUCACION_EDITAR = "PLA_UpdEduPer_sp";
-
-
-
-
         #endregion
 
         #region Familiares de Persona

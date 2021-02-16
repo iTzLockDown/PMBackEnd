@@ -13,7 +13,7 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 {
     [Route(Ruta.UriPlanilla.Prefijo)]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class PlanillaController : Controller
     {
         private readonly ILogger<PlanillaController> _logger;
@@ -25,12 +25,12 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         [HttpGet]
         [Route(Ruta.UriPlanilla.ListaTodos)]
         [AllowAnonymous]
-        public IActionResult TraerTodos()
+        public IActionResult TraerTodos(int codigoEmpleado)
         {
             IEnumerable<PEMPlanillaResponse> oLista = null;
             using (IPlanillaDominio oDominio = new PlanillaDominio())
             {
-                oLista = oDominio.TraerTodos();
+                oLista = oDominio.TraerTodos(codigoEmpleado);
             }
             if (oLista == null) return NotFound();
 

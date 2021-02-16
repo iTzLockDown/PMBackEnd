@@ -16,10 +16,10 @@ namespace PeruMoney.WS.Modelo.Response
         public string CUSPP { get; set; }       //cCusppPers   
         public string Aporte { get; set; }       //cApoActPer   
         public string SeguroVida { get; set; }       //cSegVidLey   
-        public string NumeroPolisa { get; set; }       //cNumPolVid   
+        public string NumeroPolisaVida { get; set; }       //cNumPolVid   
         public string SCT { get; set; }       //cSegComTra   
         public string NumeroPolisaESS { get; set; }       //cNumPolEss   
-        public string NumeroPoliza { get; set; }       //cNumPolPen
+        public string NumeroPolisaPen { get; set; }       //cNumPolPen
 
     }
 }

@@ -9,8 +9,8 @@ namespace PeruMoney.WS.Repositorio.SqlServer
     public interface IHorarioAgenciaDominio:IDisposable
 
     {
-        IEnumerable<PEMHorarioAgenciaResponse> TraerTodos();
+        IEnumerable<PEMHorarioAgenciaResponse> TraerTodos(int codigoSede);
         bool Grabar(PEMHorarioAgenciaRequest oPEMHorarioAgenciaRequest);
-        bool Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest);
+        bool Eliminar(PEMHorarioAgenciaRequest oPEMHorarioAgenciaRequest);
     }
 }

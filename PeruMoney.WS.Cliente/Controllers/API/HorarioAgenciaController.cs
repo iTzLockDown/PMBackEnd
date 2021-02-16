@@ -14,7 +14,7 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 {
     [Route(Ruta.UriHorarioAgencia.Prefijo)]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class HorarioAgenciaController : Controller
     {
         private readonly ILogger<HorarioAgenciaController> _logger;
@@ -26,12 +26,12 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         [HttpGet]
         [Route(Ruta.UriHorarioAgencia.ListaTodos)]
         [AllowAnonymous]
-        public IActionResult TraerTodos()
+        public IActionResult TraerTodos(int codigoSede)
         {
             IEnumerable<PEMHorarioAgenciaResponse> oLista = null;
             using (IHorarioAgenciaDominio oDominio = new HorarioAgenciaDominio())
             {
-                oLista = oDominio.TraerTodos();
+                oLista = oDominio.TraerTodos(codigoSede);
             }
             if (oLista == null) return NotFound();
 
@@ -55,12 +55,12 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 
         [HttpPut]
         [Route(Ruta.UriHorarioAgencia.Eliminar)]
-        public IActionResult Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest)
+        public IActionResult Eliminar(PEMHorarioAgenciaRequest oPEMHorarioAgenciaRequest)
         {
             bool respuesta = false;
             using (IHorarioAgenciaDominio oDominio = new HorarioAgenciaDominio())
             {
-                respuesta = oDominio.Eliminar(oPEMEliminaObjetoRequest);
+                respuesta = oDominio.Eliminar(oPEMHorarioAgenciaRequest);
             }
             if (!respuesta) return NotFound();
 

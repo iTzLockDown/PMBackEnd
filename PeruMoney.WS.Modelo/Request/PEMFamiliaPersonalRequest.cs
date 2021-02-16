@@ -6,7 +6,7 @@ namespace PeruMoney.WS.Modelo.Request
 {
     public class PEMFamiliaPersonalRequest
     {
-        public int codigo { get; set; } //@x_nCodigoFam
+        public int Codigo { get; set; } //@x_nCodigoFam
         public int CodigoPersona { get; set; }      //@x_nCodigoPer
         public string ApellidoPaterno { get; set; }      //@x_cApePatFam
         public string ApellidoMaterno{ get; set; }      //@x_cApeMatFam
@@ -19,7 +19,7 @@ namespace PeruMoney.WS.Modelo.Request
         public string Correo{ get; set; }      //@x_cCorEleFam
         public string Genero{ get; set; }      //@x_cGeneroFam
         public string Relacion{ get; set; }      //@x_cRelaciFam
-        public int Type { get; set; }      //@x_nCodUsuIns
+        public int UsuarioRegistra { get; set; }      //@x_nCodUsuIns
  
     }
 }

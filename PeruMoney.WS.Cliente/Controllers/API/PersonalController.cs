@@ -14,7 +14,7 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 {
     [Route(Ruta.UriPersona.Prefijo)]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class PersonalController : Controller
     {
         private readonly ILogger<PersonalController> _logger;

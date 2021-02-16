@@ -7,11 +7,11 @@ namespace PeruMoney.WS.Modelo.Response
 {
     public class PEMHorarioReponse
     {
-        public int Codigo{ get; set; }   //nCodigoHor
+        public string Codigo{ get; set; }   //nCodigoHor
         public string Descripcion { get; set; }    //cDescriHor
         public string Inicio { get; set; }    //nHorIniHor
         public string Fin { get; set; }    //nHorFinHor
-        public string Etado { get; set; }    //lEstadoHor
+        public string Estado { get; set; }    //lEstadoHor
         
     }
 }

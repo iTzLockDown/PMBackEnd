@@ -13,7 +13,7 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 {
     [Route(Ruta.UriEducacionPersona.Prefijo)]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class EducacionController : Controller
     {
         private readonly ILogger<EducacionController> _logger;
@@ -25,12 +25,12 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         [HttpGet]
         [Route(Ruta.UriEducacionPersona.ListaTodos)]
         [AllowAnonymous]
-        public IActionResult TraerTodos()
+        public IActionResult TraerTodos(int codigoPersona)
         {
             IEnumerable<PEMEducacionPersonalResponse> oLista = null;
             using (IEducacionPersonaDominio oDominio = new EducacionPersonaDominio())
             {
-                oLista = oDominio.TraerTodos();
+                oLista = oDominio.TraerTodos(codigoPersona);
             }
             if (oLista == null) return NotFound();
 

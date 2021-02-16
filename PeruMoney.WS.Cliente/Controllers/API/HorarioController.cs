@@ -13,7 +13,7 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 {
     [Route(Ruta.UriHorario.Prefijo)]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class HorarioController : Controller
     {
         private readonly ILogger<HorarioController> _logger;

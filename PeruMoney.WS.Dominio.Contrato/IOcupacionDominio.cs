@@ -6,7 +6,7 @@ using PeruMoney.WS.Modelo.Response;
 
 namespace PeruMoney.WS.Repositorio.Contrato
 {
-    public interface IOcupacioRepositorio:IDisposable
+    public interface IOcupacionDominio:IDisposable
 
     {
         IEnumerable<PEMOcupacionResponse> TraerTodos();

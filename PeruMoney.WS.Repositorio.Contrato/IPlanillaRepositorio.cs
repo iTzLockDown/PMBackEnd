@@ -8,7 +8,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
 {
     public interface IPlanillaRepositorio:IDisposable
     {
-        IEnumerable<PEMPlanillaResponse> TraerTodos();
+        IEnumerable<PEMPlanillaResponse> TraerTodos(int codigoEmpleado);
         bool Grabar(PEMPlanillaRequest oPEMPlanillaRequest);
     }
 }

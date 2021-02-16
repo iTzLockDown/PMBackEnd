@@ -8,12 +8,12 @@ namespace PeruMoney.WS.Repositorio.Contrato
 {
     public class EmpleoDominio : IEmpleoDominio
     {
-        public IEnumerable<PEMEmpleoResponse> TraerTodos()
+        public IEnumerable<PEMEmpleoResponse> TraerTodos(int codigoPersona)
         {
             IEnumerable<PEMEmpleoResponse> oLista = null;
             using (IEmpleoRepositorio oRepositorio = new EmpleoRepositorio())
             {
-                oLista = oRepositorio.TraerTodos();
+                oLista = oRepositorio.TraerTodos(codigoPersona);
             }
 
             return oLista;
@@ -38,16 +38,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
 
             return respuesta;
         }
-        public bool Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest)
-        {
-            bool respuesta = false;
-            using (IEmpleoRepositorio oRepositorio = new EmpleoRepositorio())
-            {
-                respuesta = oRepositorio.Eliminar(oPEMEliminaObjetoRequest);
-            }
-
-            return respuesta;
-        }
+     
         public void Dispose()
         {
             GC.SuppressFinalize(this);

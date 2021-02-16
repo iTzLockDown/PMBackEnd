@@ -8,12 +8,12 @@ namespace PeruMoney.WS.Repositorio.Contrato
 {
     public class PlanillaDominio: IPlanillaDominio
     {
-        public IEnumerable<PEMPlanillaResponse> TraerTodos()
+        public IEnumerable<PEMPlanillaResponse> TraerTodos(int codigoEmpleado)
         {
             IEnumerable<PEMPlanillaResponse> oLista = null;
             using (IPlanillaRepositorio oRepositorio = new PlanillaRepositorio())
             {
-                oLista = oRepositorio.TraerTodos();
+                oLista = oRepositorio.TraerTodos(codigoEmpleado);
             }
 
             return oLista;

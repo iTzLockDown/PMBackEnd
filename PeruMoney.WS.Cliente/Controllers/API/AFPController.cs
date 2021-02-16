@@ -13,7 +13,7 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 {
     [Route(Ruta.UriAFP.Prefijo)]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class AFPController : Controller
     {
         private readonly ILogger<AFPController> _logger;

@@ -13,12 +13,13 @@ using PeruMoney.WS.Repositorio.Contrato.SqlServer;
 
 namespace PeruMoney.WS.Repositorio.Contrato
 {
-    public class HorarioRepositorio : IHorarioRepositorio
+    public class OcupacionRepositorio : IOcupacionRepositorio
+
     {
-        public IEnumerable<PEMHorarioReponse> TraerTodos()
+        public IEnumerable<PEMOcupacionResponse> TraerTodos()
         {
-            IEnumerable<PEMHorarioReponse> oLista = null;
-            string sp = StoredProcedure.USP_HORARIO_TRAERTODOS;
+            IEnumerable<PEMOcupacionResponse> oLista = null;
+            string sp = StoredProcedure.USP_OCUPACION_TRAERTODOS;
             using (SqlHelperWS db = new SqlHelperWS(dbContext.PLAPERUMONEY()))
             {
                 using (SqlDataReader reader = db.ExecuteReader(sp))
@@ -29,16 +30,13 @@ namespace PeruMoney.WS.Repositorio.Contrato
 
             return oLista;
         }
-        public bool Grabar(PEMHorarioRequest oPEMHorarioRequest)
+        public bool Grabar(PEMOcupacionRequest oPEMOcupacionRequest)
         {
             bool respuesta = false;
-            string sp = StoredProcedure.USP_HORARIO_GRABAR;
+            string sp = StoredProcedure.USP_OCUPACION_GRABAR;
             List<SqlParameterItem> parametros = new List<SqlParameterItem>();
-            parametros.Add(new SqlParameterItem("@x_cDescriHor", SqlDbType.VarChar, oPEMHorarioRequest.DEscripcion));
-            parametros.Add(new SqlParameterItem("@x_nHorIniHor", SqlDbType.VarChar, oPEMHorarioRequest.HoraIni));
-            parametros.Add(new SqlParameterItem("@x_nHorFinHor", SqlDbType.VarChar, oPEMHorarioRequest.HoraFin));
-            parametros.Add(new SqlParameterItem("@x_nCodUsuIns", SqlDbType.Int, oPEMHorarioRequest.UsuarioRegistra));
-
+            parametros.Add(new SqlParameterItem("@x_cDescriOcu", SqlDbType.VarChar, oPEMOcupacionRequest.Descripcion));
+            parametros.Add(new SqlParameterItem("@x_nCodUsuIns", SqlDbType.Int, oPEMOcupacionRequest.UsuarioRegistra));
         
             using (SqlHelperWS db = new SqlHelperWS(dbContext.PLAPERUMONEY()))
             {
@@ -46,16 +44,14 @@ namespace PeruMoney.WS.Repositorio.Contrato
             }
             return respuesta;
         }
-        public bool Editar(PEMHorarioRequest oPEMHorarioRequest)
+        public bool Editar(PEMOcupacionRequest oPEMOcupacionRequest)
         {
             bool respuesta = false;
-            string sp = StoredProcedure.USP_HORARIO_EDITAR;
+            string sp = StoredProcedure.USP_OCUPACION_EDITAR;
             List<SqlParameterItem> parametros = new List<SqlParameterItem>();
-            parametros.Add(new SqlParameterItem("@x_nCodigoHor", SqlDbType.Int, oPEMHorarioRequest.Codigo));
-            parametros.Add(new SqlParameterItem("@x_cDescriHor", SqlDbType.VarChar, oPEMHorarioRequest.DEscripcion));
-            parametros.Add(new SqlParameterItem("@x_nHorIniHor", SqlDbType.VarChar, oPEMHorarioRequest.HoraIni));
-            parametros.Add(new SqlParameterItem("@x_nHorFinHor", SqlDbType.VarChar, oPEMHorarioRequest.HoraFin));
-            parametros.Add(new SqlParameterItem("@x_nCodUsuIns", SqlDbType.Int, oPEMHorarioRequest.UsuarioRegistra));
+            parametros.Add(new SqlParameterItem("@x_nCodigoOcu", SqlDbType.VarChar, oPEMOcupacionRequest.Codigo));
+            parametros.Add(new SqlParameterItem("@x_cDescriOcu", SqlDbType.VarChar, oPEMOcupacionRequest.Descripcion));
+            parametros.Add(new SqlParameterItem("@x_nCodUsuIns", SqlDbType.Int, oPEMOcupacionRequest.UsuarioRegistra));
             using (SqlHelperWS db = new SqlHelperWS(dbContext.PLAPERUMONEY()))
             {
                 respuesta = db.ExecuteNonQuery(sp, parametros);
@@ -65,9 +61,9 @@ namespace PeruMoney.WS.Repositorio.Contrato
         public bool Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest)
         {
             bool respuesta = false;
-            string sp = StoredProcedure.USP_HORARIO_ELIMINAR;
+            string sp = StoredProcedure.USP_OCUPACION_ELIMINAR;
             List<SqlParameterItem> parametros = new List<SqlParameterItem>();
-            parametros.Add(new SqlParameterItem("@x_nCodigoHor", SqlDbType.Int, oPEMEliminaObjetoRequest.Codigo));
+            parametros.Add(new SqlParameterItem("@x_nCodigoOcu", SqlDbType.VarChar, oPEMEliminaObjetoRequest.Codigo));
             parametros.Add(new SqlParameterItem("@x_nCodUsuIns", SqlDbType.Int, oPEMEliminaObjetoRequest.CodigoUsuario));
             using (SqlHelperWS db = new SqlHelperWS(dbContext.PLAPERUMONEY()))
             {
@@ -75,15 +71,12 @@ namespace PeruMoney.WS.Repositorio.Contrato
             }
             return respuesta;
         }
-        public PEMHorarioReponse DesdeDataReader(IDataReader reader)
+        public PEMOcupacionResponse DesdeDataReader(IDataReader reader)
         {
-            return new PEMHorarioReponse()
+            return new PEMOcupacionResponse()
             {
                 Codigo = reader.GetValue(0).ToString().Trim(),
-                Descripcion = reader.GetValue(1).ToString().Trim(),
-                Inicio = reader.GetValue(2).ToString().Trim(),
-                Fin = reader.GetValue(3).ToString().Trim(),
-                Estado = reader.GetValue(4).ToString().Trim(),
+                DEscripcion = reader.GetValue(1).ToString().Trim(),
 
             };
         }

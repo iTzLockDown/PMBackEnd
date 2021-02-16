@@ -8,12 +8,12 @@ namespace PeruMoney.WS.Repositorio.Contrato
 {
     public class EducacionPersonaDominio : IEducacionPersonaDominio
     {
-        public IEnumerable<PEMEducacionPersonalResponse> TraerTodos()
+        public IEnumerable<PEMEducacionPersonalResponse> TraerTodos(int codigoPersona)
         {
             IEnumerable<PEMEducacionPersonalResponse> oLista = null;
             using (IEducacionPersonaRepositorio oRepositorio = new EducacionPersonaRepositorio())
             {
-                oLista = oRepositorio.TraerTodos();
+                oLista = oRepositorio.TraerTodos(codigoPersona);
             }
 
             return oLista;

@@ -8,7 +8,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
 {
     public interface ISocialPersonaRepositorio:IDisposable
     {
-        IEnumerable<PEMSocialPersonaResponse> TraerTodos();
+        IEnumerable<PEMSocialPersonaResponse> TraerTodos(int codigoPersona);
         bool Grabar(PEMSocialPersonaRequest oPEMSocialPersonaRequest);
         bool Editar(PEMSocialPersonaRequest oPEMSocialPersonaRequest);
     }
