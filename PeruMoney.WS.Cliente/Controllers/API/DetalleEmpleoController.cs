@@ -24,7 +24,7 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         }
         [HttpGet]
         [Route(Ruta.UriDetalleEmpleo.ListaTodos)]
-        [AllowAnonymous]
+
         public IActionResult TraerTodos()
         {
             IEnumerable<PEMEmpleoPersonaResponse> oLista = null;

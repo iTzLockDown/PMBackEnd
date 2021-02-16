@@ -24,7 +24,7 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         }
         [HttpGet]
         [Route(Ruta.UriSocial.ListaTodos)]
-        [AllowAnonymous]
+
         public IActionResult TraerTodos(int codigoPersona)
         {
             IEnumerable<PEMSocialPersonaResponse> oLista = null;

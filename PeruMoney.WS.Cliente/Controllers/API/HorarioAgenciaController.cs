@@ -25,7 +25,7 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         }
         [HttpGet]
         [Route(Ruta.UriHorarioAgencia.ListaTodos)]
-        [AllowAnonymous]
+
         public IActionResult TraerTodos(int codigoSede)
         {
             IEnumerable<PEMHorarioAgenciaResponse> oLista = null;

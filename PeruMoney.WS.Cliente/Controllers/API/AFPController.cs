@@ -24,7 +24,7 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         }
         [HttpGet]
         [Route(Ruta.UriAFP.ListaTodos)]
-        [AllowAnonymous]
+ 
         public IActionResult TraerTodos()
         {
             IEnumerable<PEMAFPResponse> oLista = null;
