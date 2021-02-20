@@ -32,6 +32,7 @@ namespace PeruMoney.WS.Cliente.Controllers
             public const string EntradaExtra = "entradaextra";
             public const string SalidaExtra = "salidaextra";
             public const string TraerPersonal = "traerpersonal";
+            public const string TraerAsistencia = "asistenciadiaria";
         }
 
         public class UriSede
@@ -143,6 +144,16 @@ namespace PeruMoney.WS.Cliente.Controllers
             public const string Editar = "editar";
         }
 
+        public class UriDocumento
+        {
+            public const string Prefijo = "api/documento";
+            public const string Lista = "lista";
+        }
 
+        public class UriEstadoCivil
+        {
+            public const string Prefijo = "api/estadocivil";
+            public const string Lista = "lista";
+        }
     }
 }

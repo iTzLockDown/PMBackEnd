@@ -38,6 +38,7 @@ namespace PeruMoney.WS.Cliente.Controllers.API
         }
         [HttpGet]
         [Route(Ruta.UriPersona.ListaAsistencia)]
+        [AllowAnonymous]
         public IActionResult TraerTodosDocumento(string documento)
         {
             IEnumerable<PEMAsistenciaPersonaResponse> oLista = null;

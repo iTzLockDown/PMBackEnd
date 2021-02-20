@@ -82,12 +82,27 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 
         [HttpGet]
         [Route(Ruta.UriAsistencia.TraerPersonal)]
+
         public IActionResult TraerUno(string documento)
         {
             PEMPersonaResponse oObjeto = null;
             using (IPersonaDominio oDominio = new PersonaDominio())
             {
                 oObjeto = oDominio.TraerUno(documento);
+            }
+            if (oObjeto == null) return NotFound();
+
+            return Ok(oObjeto);
+        }
+        [HttpGet]
+        [Route(Ruta.UriAsistencia.TraerAsistencia)]
+
+        public IActionResult AsistenciaDiaria(string documento)
+        {
+            PEMRegistroAsistenciaResponse oObjeto = null;
+            using (IPersonaDominio oDominio = new PersonaDominio())
+            {
+                oObjeto = oDominio.AsistenciaDiaria(documento);
             }
             if (oObjeto == null) return NotFound();
 
