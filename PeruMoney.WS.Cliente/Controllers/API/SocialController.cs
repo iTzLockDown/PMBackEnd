@@ -27,7 +27,7 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 
         public IActionResult TraerTodos(int codigoPersona)
         {
-            IEnumerable<PEMSocialPersonaResponse> oLista = null;
+            PEMSocialPersonaResponse oLista = null;
             using (ISocialPersonaDominio oDominio = new SocialPersonaDominio())
             {
                 oLista = oDominio.TraerTodos(codigoPersona);

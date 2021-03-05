@@ -8,7 +8,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
 {
     public interface IEducacionPersonaRepositorio:IDisposable
     {
-        IEnumerable<PEMEducacionPersonalResponse> TraerTodos(int codigoPersona);
+        PEMEducacionPersonalResponse TraerTodos(int codigoPersona);
         bool Grabar(PEMEducacionPersonalRequest oPEMEducacionPersonalRequest);
         bool Editar(PEMEducacionPersonalRequest oPEMEducacionPersonalRequest);
     }

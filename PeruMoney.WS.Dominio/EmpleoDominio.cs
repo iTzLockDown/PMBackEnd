@@ -8,9 +8,9 @@ namespace PeruMoney.WS.Repositorio.Contrato
 {
     public class EmpleoDominio : IEmpleoDominio
     {
-        public IEnumerable<PEMEmpleoResponse> TraerTodos(int codigoPersona)
+        public PEMEmpleoResponse TraerTodos(int codigoPersona)
         {
-            IEnumerable<PEMEmpleoResponse> oLista = null;
+            PEMEmpleoResponse oLista = null;
             using (IEmpleoRepositorio oRepositorio = new EmpleoRepositorio())
             {
                 oLista = oRepositorio.TraerTodos(codigoPersona);

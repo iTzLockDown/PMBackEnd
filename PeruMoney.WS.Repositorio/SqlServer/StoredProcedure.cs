@@ -19,11 +19,13 @@ namespace PeruMoney.WS.Repositorio.Contrato.SqlServer
         public const string USP_PERSONAL_EDITAR = "PLA_UpdPerson_sp";
         public const string USP_PERSONAL_ELIMINAR = "PLA_DelPerson_sp";
         public const string USP_PERSONAL_TRAERUNO = "PLA_LisUnoPer_sp";
+        public const string USP_PERSONAL_TRAERCODIGO = "PLA_LisUsuCod_SP";
 
         public const string USP_PERSONAL_REGISTRAENTRADA = "PLA_RegEntPer_sp";
         public const string USP_PERSONAL_REGISTRASALIDA = "PLA_RegSalPer_sp";
         public const string USP_PERSONAL_REGISTRAENTRADA_EXTRA = "PLA_RegEntExt_sp";
         public const string USP_PERSONAL_REGISTRASALIDA_EXTRA = "PLA_RegSalExt_sp";
+        public const string USP_PERSONAL_ASISTENCIA = "PLA_AsiDiaPer_sp";
         #endregion
 
         #region Personal
@@ -142,7 +144,16 @@ namespace PeruMoney.WS.Repositorio.Contrato.SqlServer
 
         #endregion
 
+        #region Documento
 
+        public const string USP_DOCUMENTO_TRAERTODOS = "PLA_LisDocume_SP";
 
+        #endregion
+
+        #region Estado Civil
+
+        public const string USP_ESTADOCIVIL_TRAERTODOS = "PLA_LisEstCiv_SP";
+
+        #endregion
     }
 }

@@ -8,7 +8,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
 {
     public interface IEmpleoDominio : IDisposable
     {
-        IEnumerable<PEMEmpleoResponse> TraerTodos(int codigoPersona);
+        PEMEmpleoResponse TraerTodos(int codigoPersona);
         bool Grabar(PEMEmpleoRequest oPEMEmpleoRequest);
         bool Editar(PEMEmpleoRequest oPEMEmpleoRequest);
     }

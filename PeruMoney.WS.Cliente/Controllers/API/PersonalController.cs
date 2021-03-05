@@ -50,7 +50,20 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 
             return Ok(oLista);
         }
+        [HttpGet]
+        [Route(Ruta.UriPersona.ListaCodigo)]
 
+        public IActionResult TraerCodigo(int codigoPersona)
+        {
+            PEMPersonaResponse oObjeto = null;
+            using (IPersonaDominio oDominio = new PersonaDominio())
+            {
+                oObjeto = oDominio.TraerUnoCodigo(codigoPersona);
+            }
+            if (oObjeto == null) return NotFound();
+
+            return Ok(oObjeto);
+        }
         [HttpPost]
         [Route(Ruta.UriPersona.Grabar)]
         public IActionResult Grabar(PEMPersonaRequest oPEMPersonaRequest)

@@ -8,9 +8,9 @@ namespace PeruMoney.WS.Repositorio.Contrato
 {
     public class SocialPersonaDominio: ISocialPersonaDominio
     {
-        public IEnumerable<PEMSocialPersonaResponse> TraerTodos(int codigoPersona)
+        public PEMSocialPersonaResponse TraerTodos(int codigoPersona)
         {
-            IEnumerable<PEMSocialPersonaResponse> oLista = null;
+            PEMSocialPersonaResponse oLista = null;
             using (ISocialPersonaRepositorio oRepositorio = new SocialPersonaRepositorio())
             {
                 oLista = oRepositorio.TraerTodos(codigoPersona);

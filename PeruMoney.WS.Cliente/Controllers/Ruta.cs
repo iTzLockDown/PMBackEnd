@@ -18,6 +18,7 @@ namespace PeruMoney.WS.Cliente.Controllers
         {
             public const string Prefijo = "api/personal";
             public const string ListaTodos = "lista";
+            public const string ListaCodigo = "listacodigo";
             public const string ListaAsistencia = "asistencia";
             public const string Grabar = "grabar";
             public const string Editar = "editar";

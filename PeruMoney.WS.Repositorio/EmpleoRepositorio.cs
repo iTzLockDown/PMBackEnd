@@ -15,9 +15,9 @@ namespace PeruMoney.WS.Repositorio.Contrato
 {
     public class EmpleoRepositorio : IEmpleoRepositorio
     {
-        public IEnumerable<PEMEmpleoResponse> TraerTodos(int codigoPersona)
+        public PEMEmpleoResponse TraerTodos(int codigoPersona)
         {
-            IEnumerable<PEMEmpleoResponse> oLista = null;
+            PEMEmpleoResponse oLista = null;
             string sp = StoredProcedure.USP_DETALLEEMPLEO_TRAERTODOS;
             List<SqlParameterItem> parametros = new List<SqlParameterItem>();
             parametros.Add(new SqlParameterItem("@x_nCodigoPer", SqlDbType.Int, codigoPersona));
@@ -25,7 +25,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
             {
                 using (SqlDataReader reader = db.ExecuteReader(sp, parametros))
                 {
-                    oLista = reader.Select(DesdeDataReader).ToList();
+                    oLista = reader.Select(DesdeDataReader).First();
                 }
             }
 

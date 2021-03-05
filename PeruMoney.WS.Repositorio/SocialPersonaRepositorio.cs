@@ -15,9 +15,9 @@ namespace PeruMoney.WS.Repositorio.Contrato
 {
     public class SocialPersonaRepositorio: ISocialPersonaRepositorio
     {
-        public IEnumerable<PEMSocialPersonaResponse> TraerTodos(int codigoPersona)
+        public PEMSocialPersonaResponse TraerTodos(int codigoPersona)
         {
-            IEnumerable<PEMSocialPersonaResponse> oLista = null;
+            PEMSocialPersonaResponse oObjeto = null;
             string sp = StoredProcedure.USP_SOCIAL_TRAERTODOS;
             List<SqlParameterItem> parametros = new List<SqlParameterItem>();
             parametros.Add(new SqlParameterItem("@x_nCodigoPer", SqlDbType.Char, codigoPersona));
@@ -25,11 +25,11 @@ namespace PeruMoney.WS.Repositorio.Contrato
             {
                 using (SqlDataReader reader = db.ExecuteReader(sp, parametros))
                 {
-                    oLista = reader.Select(DesdeDataReader).ToList();
+                    oObjeto = reader.Select(DesdeDataReader).First();
                 }
             }
 
-            return oLista;
+            return oObjeto;
         }
 
         public bool Grabar(PEMSocialPersonaRequest oPEMSocialPersonaRequest)

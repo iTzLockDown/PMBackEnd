@@ -12,6 +12,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
         IEnumerable<PEMPersonaResponse> TraerTodos();
         IEnumerable<PEMAsistenciaPersonaResponse> TraerTodosDocumento(string documento);
         PEMPersonaResponse TraerUno(string documento);
+        PEMPersonaResponse TraerUnoCodigo(int codigoPersona);
         bool Grabar(PEMPersonaRequest oPEMSedeRequest);
         bool Editar(PEMPersonaRequest oPEMSedeRequest);
         bool Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest);
@@ -19,5 +20,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
         bool Salida(PEMAsistenciaRequest oPEMAsistenciaRequest); 
         bool EntradaExtra(PEMAsistenciaRequest oPEMAsistenciaRequest);
         bool SalidaExtra(PEMAsistenciaRequest oPEMAsistenciaRequest);
+
+        PEMRegistroAsistenciaResponse AsistenciaDiaria(string documento);
     }
 }

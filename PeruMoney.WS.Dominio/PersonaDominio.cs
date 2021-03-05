@@ -29,6 +29,16 @@ namespace PeruMoney.WS.Repositorio.Contrato
             return oObjeto;
         }
 
+        public PEMPersonaResponse TraerUnoCodigo(int codigoPersona)
+        {
+            PEMPersonaResponse oObjeto = null;
+            using (IPersonaRepositorio oRepositorio = new PersonaRepositorio())
+            {
+                oObjeto = oRepositorio.TraerUnoCodigo(codigoPersona);
+            }
+            return oObjeto;
+        }
+
         public IEnumerable<PEMAsistenciaPersonaResponse> TraerTodosDocumento(string documento)
         {
             IEnumerable<PEMAsistenciaPersonaResponse> oLista = null;
@@ -101,6 +111,16 @@ namespace PeruMoney.WS.Repositorio.Contrato
                 respuesta = oRepositorio.SalidaExtra(oPEMAsistenciaRequest);
             }
             return respuesta;
+        }
+
+        public PEMRegistroAsistenciaResponse AsistenciaDiaria(string documento)
+        {
+            PEMRegistroAsistenciaResponse oObjeto = null;
+            using (IPersonaRepositorio oRepositorio = new PersonaRepositorio())
+            {
+                oObjeto = oRepositorio.AsistenciaDiaria(documento);
+            }
+            return oObjeto;
         }
         public void Dispose()
         {

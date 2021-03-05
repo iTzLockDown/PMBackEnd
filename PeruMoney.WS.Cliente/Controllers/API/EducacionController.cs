@@ -27,7 +27,7 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 
         public IActionResult TraerTodos(int codigoPersona)
         {
-            IEnumerable<PEMEducacionPersonalResponse> oLista = null;
+            PEMEducacionPersonalResponse oLista = null;
             using (IEducacionPersonaDominio oDominio = new EducacionPersonaDominio())
             {
                 oLista = oDominio.TraerTodos(codigoPersona);
