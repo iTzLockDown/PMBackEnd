@@ -10,11 +10,11 @@
         "projectUniqueName": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Dominio.Contrato\\PeruMoney.WS.Dominio.Contrato.csproj",
         "projectName": "PeruMoney.WS.Dominio.Contrato",
         "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Dominio.Contrato\\PeruMoney.WS.Dominio.Contrato.csproj",
-        "packagesPath": "C:\\Users\\STACY\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\KAIRA\\.nuget\\packages\\",
         "outputPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Dominio.Contrato\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\STACY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KAIRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -68,11 +68,11 @@
         "projectUniqueName": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Modelo\\PeruMoney.WS.Modelo.csproj",
         "projectName": "PeruMoney.WS.Modelo",
         "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Modelo\\PeruMoney.WS.Modelo.csproj",
-        "packagesPath": "C:\\Users\\STACY\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\KAIRA\\.nuget\\packages\\",
         "outputPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Modelo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\STACY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KAIRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -112,7 +112,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

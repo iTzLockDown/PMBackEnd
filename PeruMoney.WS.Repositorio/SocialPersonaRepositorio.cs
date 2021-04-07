@@ -25,7 +25,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
             {
                 using (SqlDataReader reader = db.ExecuteReader(sp, parametros))
                 {
-                    oObjeto = reader.Select(DesdeDataReader).First();
+                    oObjeto = reader.Select(DesdeDataReader).FirstOrDefault();
                 }
             }
 

@@ -570,7 +570,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\STACY\\.nuget\\packages\\": {}
+    "C:\\Users\\KAIRA\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -578,11 +578,11 @@
       "projectUniqueName": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio\\PeruMoney.WS.Repositorio.csproj",
       "projectName": "PeruMoney.WS.Repositorio",
       "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio\\PeruMoney.WS.Repositorio.csproj",
-      "packagesPath": "C:\\Users\\STACY\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\KAIRA\\.nuget\\packages\\",
       "outputPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\STACY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\KAIRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -635,7 +635,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

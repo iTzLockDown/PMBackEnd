@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Cliente", "5.Cliente", "{3C9407A4-6551-452B-AEBC-9BCE73E95E5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeruMoney.WS.Cliente", "PeruMoney.WS.Cliente\PeruMoney.WS.Cliente.csproj", "{036AD5E5-85BC-4B70-B125-A91ED6156AD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeruMoney.WS.Cliente", "PeruMoney.WS.Cliente\PeruMoney.WS.Cliente.csproj", "{036AD5E5-85BC-4B70-B125-A91ED6156AD0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7.Infraestructura", "7.Infraestructura", "{01569FB1-DB57-469B-8D25-AE3E5B090689}"
 EndProject
@@ -38,6 +38,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeruMoney.WS.Servicio", "PeruMoney.WS.Servicio\PeruMoney.WS.Servicio.csproj", "{8A645AC1-3C2D-44E5-AB9D-9F7F3707A7F7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeruMoney.WS.Modelo", "PeruMoney.WS.Modelo\PeruMoney.WS.Modelo.csproj", "{BD21B87F-38D4-4472-A6B4-78E191C72895}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeruMoney.DS.Cliente", "PeruMoney.DS.Cliente\PeruMoney.DS.Cliente.csproj", "{82A0C5E9-B4F9-4102-840B-69533ED86485}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,6 +91,10 @@ Global
 		{BD21B87F-38D4-4472-A6B4-78E191C72895}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD21B87F-38D4-4472-A6B4-78E191C72895}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD21B87F-38D4-4472-A6B4-78E191C72895}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82A0C5E9-B4F9-4102-840B-69533ED86485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82A0C5E9-B4F9-4102-840B-69533ED86485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82A0C5E9-B4F9-4102-840B-69533ED86485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82A0C5E9-B4F9-4102-840B-69533ED86485}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -105,6 +111,7 @@ Global
 		{6DD61611-6DDD-4B82-AF42-E664A023334E} = {17036192-5E01-4D53-852D-36E330B5D2DC}
 		{8A645AC1-3C2D-44E5-AB9D-9F7F3707A7F7} = {360CAC9B-4EA2-464D-9FC1-700092537D18}
 		{BD21B87F-38D4-4472-A6B4-78E191C72895} = {BF33D5D9-BA61-419E-96C7-5F4F82CDFE48}
+		{82A0C5E9-B4F9-4102-840B-69533ED86485} = {3C9407A4-6551-452B-AEBC-9BCE73E95E5A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EFA1DC7D-4B09-4D30-AC0A-357AE9D7ECF5}

@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PeruMoney.WS.Dominio.Contrato\PeruMoney.WS.Dominio.Contrato.csproj" />
+    <ProjectReference Include="..\PeruMoney.WS.Dominio\PeruMoney.WS.Dominio.csproj" />
+    <ProjectReference Include="..\PeruMoney.WS.Modelo\PeruMoney.WS.Modelo.csproj" />
+  </ItemGroup>
+
+</Project>

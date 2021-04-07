@@ -27,14 +27,22 @@ namespace PeruMoney.WS.Cliente.Controllers.API
 
         public IActionResult TraerTodos(int codigoPersona)
         {
-            PEMSocialPersonaResponse oLista = null;
-            using (ISocialPersonaDominio oDominio = new SocialPersonaDominio())
+            try
             {
-                oLista = oDominio.TraerTodos(codigoPersona);
-            }
-            if (oLista == null) return NotFound();
+                PEMSocialPersonaResponse oLista = null;
+                using (ISocialPersonaDominio oDominio = new SocialPersonaDominio())
+                {
+                    oLista = oDominio.TraerTodos(codigoPersona);
+                }
+                if (oLista == null) return NotFound();
 
-            return Ok(oLista);
+                return Ok(oLista);
+            }
+            catch (Exception e)
+            {
+                return NotFound();
+            }
+            
         }
 
 

@@ -155,5 +155,14 @@ namespace PeruMoney.WS.Repositorio.Contrato.SqlServer
         public const string USP_ESTADOCIVIL_TRAERTODOS = "PLA_LisEstCiv_SP";
 
         #endregion
+
+        #region Equipo
+
+        public const string USP_EQUIPO_REGISTRAR = "PLA_RegTerReg_sp";
+        public const string USP_EQUIPO_LISTAR = "PLA_LisEquTer_sp";
+        public const string USP_EQUIPO_HABILITAR = "PLA_HabEquTer_sp";
+        public const string USP_EQUIPO_ELIMINAR = "PLA_DelEquTer_sp";
+
+        #endregion
     }
 }
