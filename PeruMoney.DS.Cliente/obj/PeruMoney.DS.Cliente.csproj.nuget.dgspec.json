@@ -10,11 +10,11 @@
         "projectUniqueName": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.DS.Cliente\\PeruMoney.DS.Cliente.csproj",
         "projectName": "PeruMoney.DS.Cliente",
         "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.DS.Cliente\\PeruMoney.DS.Cliente.csproj",
-        "packagesPath": "C:\\Users\\KAIRA\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\ROXANNE\\.nuget\\packages\\",
         "outputPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.DS.Cliente\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\KAIRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ROXANNE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -77,11 +77,11 @@
         "projectUniqueName": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Bloque.SqlServer\\PeruMoney.WS.Bloque.SqlServer.csproj",
         "projectName": "PeruMoney.WS.Bloque.SqlServer",
         "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Bloque.SqlServer\\PeruMoney.WS.Bloque.SqlServer.csproj",
-        "packagesPath": "C:\\Users\\KAIRA\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\ROXANNE\\.nuget\\packages\\",
         "outputPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Bloque.SqlServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\KAIRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ROXANNE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -137,11 +137,11 @@
         "projectUniqueName": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Dominio.Contrato\\PeruMoney.WS.Dominio.Contrato.csproj",
         "projectName": "PeruMoney.WS.Dominio.Contrato",
         "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Dominio.Contrato\\PeruMoney.WS.Dominio.Contrato.csproj",
-        "packagesPath": "C:\\Users\\KAIRA\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\ROXANNE\\.nuget\\packages\\",
         "outputPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Dominio.Contrato\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\KAIRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ROXANNE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -195,11 +195,11 @@
         "projectUniqueName": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Dominio\\PeruMoney.WS.Dominio.csproj",
         "projectName": "PeruMoney.WS.Dominio",
         "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Dominio\\PeruMoney.WS.Dominio.csproj",
-        "packagesPath": "C:\\Users\\KAIRA\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\ROXANNE\\.nuget\\packages\\",
         "outputPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\KAIRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ROXANNE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -259,11 +259,11 @@
         "projectUniqueName": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Modelo\\PeruMoney.WS.Modelo.csproj",
         "projectName": "PeruMoney.WS.Modelo",
         "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Modelo\\PeruMoney.WS.Modelo.csproj",
-        "packagesPath": "C:\\Users\\KAIRA\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\ROXANNE\\.nuget\\packages\\",
         "outputPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Modelo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\KAIRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ROXANNE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -313,11 +313,11 @@
         "projectUniqueName": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio.Contrato\\PeruMoney.WS.Repositorio.Contrato.csproj",
         "projectName": "PeruMoney.WS.Repositorio.Contrato",
         "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio.Contrato\\PeruMoney.WS.Repositorio.Contrato.csproj",
-        "packagesPath": "C:\\Users\\KAIRA\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\ROXANNE\\.nuget\\packages\\",
         "outputPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio.Contrato\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\KAIRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ROXANNE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -371,11 +371,11 @@
         "projectUniqueName": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio\\PeruMoney.WS.Repositorio.csproj",
         "projectName": "PeruMoney.WS.Repositorio",
         "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio\\PeruMoney.WS.Repositorio.csproj",
-        "packagesPath": "C:\\Users\\KAIRA\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\ROXANNE\\.nuget\\packages\\",
         "outputPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\KAIRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ROXANNE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

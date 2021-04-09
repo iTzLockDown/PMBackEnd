@@ -32,7 +32,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
             switch (ambiente)
             {
                 case "DESARROLLO":
-                    cadenaConexion = "Data Source=LAPTOP-I55UC5FI\\SQLEXPRESS;Initial Catalog=PERUMONEY;Integrated Security=True";
+                    cadenaConexion = "Data Source=LAPTOP-FJQRMKR9\\SQLEXPRESS;Initial Catalog=PERUMONEY;Integrated Security=True";
                     //cadenaConexion =
                     //    "Server = tcp:perumoneydb.database.windows.net,1433; Initial Catalog = perumoney; Persist Security Info = False; User ID = adminperumoney; Password = Jhulisax123; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;";
                     break;

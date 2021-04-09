@@ -10,11 +10,11 @@
         "projectUniqueName": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Pruebas\\PeruMoney.WS.Pruebas.csproj",
         "projectName": "PeruMoney.WS.Pruebas",
         "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Pruebas\\PeruMoney.WS.Pruebas.csproj",
-        "packagesPath": "C:\\Users\\KAIRA\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\ROXANNE\\.nuget\\packages\\",
         "outputPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Pruebas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\KAIRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ROXANNE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

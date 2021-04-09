@@ -27,7 +27,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\KAIRA\\.nuget\\packages\\": {}
+    "C:\\Users\\ROXANNE\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -35,11 +35,11 @@
       "projectUniqueName": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio.Contrato\\PeruMoney.WS.Repositorio.Contrato.csproj",
       "projectName": "PeruMoney.WS.Repositorio.Contrato",
       "projectPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio.Contrato\\PeruMoney.WS.Repositorio.Contrato.csproj",
-      "packagesPath": "C:\\Users\\KAIRA\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\ROXANNE\\.nuget\\packages\\",
       "outputPath": "D:\\Proyectos\\AZURE\\PeruMoney\\PeruMoney.WS.Repositorio.Contrato\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\KAIRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ROXANNE\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
