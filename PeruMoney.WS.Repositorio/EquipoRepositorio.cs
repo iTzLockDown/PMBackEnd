@@ -59,13 +59,13 @@ namespace PeruMoney.WS.Repositorio
             }
             return respuesta;
         }
-        public bool Eliminar(int codigoTerminal, int codigoUsuario)
+        public bool Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest)
         {
             bool respuesta = false;
             string sp = StoredProcedure.USP_EQUIPO_ELIMINAR;
             List<SqlParameterItem> parametros = new List<SqlParameterItem>();
-            parametros.Add(new SqlParameterItem("@x_nCodigoTer", SqlDbType.Int, codigoTerminal));
-            parametros.Add(new SqlParameterItem("@x_nCodUsuDel", SqlDbType.Int, codigoUsuario));
+            parametros.Add(new SqlParameterItem("@x_nCodigoTer", SqlDbType.Int, oPEMEliminaObjetoRequest.Codigo));
+            parametros.Add(new SqlParameterItem("@x_nCodUsuDel", SqlDbType.Int, oPEMEliminaObjetoRequest.CodigoUsuario));
             using (SqlHelperWS db = new SqlHelperWS(dbContext.PLAPERUMONEY()))
             {
                 respuesta = db.ExecuteNonQuery(sp, parametros);

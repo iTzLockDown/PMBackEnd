@@ -156,5 +156,12 @@ namespace PeruMoney.WS.Cliente.Controllers
             public const string Prefijo = "api/estadocivil";
             public const string Lista = "lista";
         }
+        public class UriEquipo
+        {
+            public const string Prefijo = "api/equipo";
+            public const string Lista = "lista";
+            public const string Habilitar = "habilitar";
+            public const string Eliminar = "eliminar";
+        }
     }
 }

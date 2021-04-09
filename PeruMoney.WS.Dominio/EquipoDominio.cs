@@ -39,12 +39,12 @@ namespace PeruMoney.WS.Dominio
             }
             return respuesta;
         }
-        public bool Eliminar(int codigoTerminal, int codigoUsuario)
+        public bool Eliminar(PEMEliminaObjetoRequest oPEMEliminaObjetoRequest)
         {
             bool respuesta = false;
             using (IEquipoRepositorio oRepositorio = new EquipoRepositorio())
             {
-                respuesta = oRepositorio.Eliminar(codigoTerminal, codigoUsuario);
+                respuesta = oRepositorio.Eliminar(oPEMEliminaObjetoRequest);
             }
             return respuesta;
         }
