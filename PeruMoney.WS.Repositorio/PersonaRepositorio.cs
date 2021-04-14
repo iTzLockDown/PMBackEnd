@@ -43,7 +43,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
             {
                 using (SqlDataReader reader = db.ExecuteReader(sp, parametros))
                 {
-                    oObjeto = reader.Select(DesdeDataReader).FirstOrDefault();
+                    oObjeto = reader.Select(DesdeDataReaderDocumento).FirstOrDefault();
                 }
             }
             return oObjeto;
@@ -154,6 +154,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
             List<SqlParameterItem> parametros = new List<SqlParameterItem>();
             parametros.Add(new SqlParameterItem("@x_cDocIdePer", SqlDbType.VarChar, oPEMAsistenciaRequest.DocumentoPersona));
             parametros.Add(new SqlParameterItem("@x_nCodigoSed", SqlDbType.VarChar, oPEMAsistenciaRequest.CodigoSede));
+            parametros.Add(new SqlParameterItem("@x_cIppublTer", SqlDbType.VarChar, oPEMAsistenciaRequest.IpPublica));
             parametros.Add(new SqlParameterItem("@x_nHorSedAsi", SqlDbType.Int, oPEMAsistenciaRequest.CodigoHorario ));
             using (SqlHelperWS db = new SqlHelperWS(dbContext.PLAPERUMONEY()))
             {
@@ -168,6 +169,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
             string sp = StoredProcedure.USP_PERSONAL_REGISTRASALIDA;
             List<SqlParameterItem> parametros = new List<SqlParameterItem>();
             parametros.Add(new SqlParameterItem("@x_cDocIdePer", SqlDbType.VarChar, oPEMAsistenciaRequest.DocumentoPersona));
+            parametros.Add(new SqlParameterItem("@x_cIppublTer", SqlDbType.VarChar, oPEMAsistenciaRequest.IpPublica));
             parametros.Add(new SqlParameterItem("@x_nCodigoSed", SqlDbType.VarChar, oPEMAsistenciaRequest.CodigoSede));
             using (SqlHelperWS db = new SqlHelperWS(dbContext.PLAPERUMONEY()))
             {
@@ -182,6 +184,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
             string sp = StoredProcedure.USP_PERSONAL_REGISTRAENTRADA_EXTRA;
             List<SqlParameterItem> parametros = new List<SqlParameterItem>();
             parametros.Add(new SqlParameterItem("@x_cDocIdePer", SqlDbType.VarChar, oPEMAsistenciaRequest.DocumentoPersona));
+            parametros.Add(new SqlParameterItem("@x_cIppublTer", SqlDbType.VarChar, oPEMAsistenciaRequest.IpPublica));
             parametros.Add(new SqlParameterItem("@x_nCodigoSed", SqlDbType.VarChar, oPEMAsistenciaRequest.CodigoSede));
             using (SqlHelperWS db = new SqlHelperWS(dbContext.PLAPERUMONEY()))
             {
@@ -196,6 +199,7 @@ namespace PeruMoney.WS.Repositorio.Contrato
             string sp = StoredProcedure.USP_PERSONAL_REGISTRASALIDA_EXTRA;
             List<SqlParameterItem> parametros = new List<SqlParameterItem>();
             parametros.Add(new SqlParameterItem("@x_cDocIdePer", SqlDbType.VarChar, oPEMAsistenciaRequest.DocumentoPersona));
+            parametros.Add(new SqlParameterItem("@x_cIppublTer", SqlDbType.VarChar, oPEMAsistenciaRequest.IpPublica));
             parametros.Add(new SqlParameterItem("@x_nCodSedExt", SqlDbType.VarChar, oPEMAsistenciaRequest.CodigoSede));
             using (SqlHelperWS db = new SqlHelperWS(dbContext.PLAPERUMONEY()))
             {
@@ -257,6 +261,25 @@ namespace PeruMoney.WS.Repositorio.Contrato
                 EstadoCivil = reader.GetValue(12).ToString().Trim(),
                 Estado = reader.GetValue(13).ToString().Trim(),
                 Cargo = reader.GetValue(14).ToString().Trim()
+            };
+        }
+        public PEMPersonaResponse DesdeDataReaderDocumento(IDataReader reader)
+        {
+            return new PEMPersonaResponse()
+            {
+                Codigo = reader.GetValue(0).ToString().Trim(),
+                ApellidoPaterno = reader.GetValue(1).ToString().Trim(),
+                ApellidoMaterno = reader.GetValue(2).ToString().Trim(),
+                Nombre = reader.GetValue(3).ToString().Trim(),
+                Documento = reader.GetValue(4).ToString().Trim(),
+                Direccion = reader.GetValue(5).ToString().Trim(),
+                Telefono = reader.GetValue(6).ToString().Trim(),
+                Celular = reader.GetValue(7).ToString().Trim(),
+                Email = reader.GetValue(8).ToString().Trim(),
+                Genero = reader.GetValue(9).ToString().Trim(),
+                EstadoCivil = reader.GetValue(10).ToString().Trim(),
+                Estado = reader.GetValue(11).ToString().Trim(),
+                Cargo = reader.GetValue(12).ToString().Trim()
             };
         }
         public PEMPersonaResponse DesdeDataReaderCodigo(IDataReader reader)
